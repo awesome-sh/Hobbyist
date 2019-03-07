@@ -1,0 +1,470 @@
+section#myPage {
+    width: 100%;
+    text-align: center;
+}
+
+section#myPage .myPage_content {
+    display: inline-block;
+    text-align: center;
+    width: 990px;
+    padding-top: 140px;
+    color: #515359;
+}
+section#myPage .myPage_content .myPage_top {
+    width: 970px;
+    height: 50px;
+    position: fixed;
+    color: rgb(39, 39, 39);
+    padding-left: 20px;
+    text-align: left;
+    border: 2px solid #e1e3e9;
+    background-color: #fff;
+    font-size: 14px;
+    transition: 500ms;
+    overflow: hidden;
+    top: 163px;
+}
+
+section#myPage .myPage_content .myPage_top ul {
+    margin: 0;
+    padding: 0;
+    padding-top: 13px;
+    list-style-type: none;
+}
+
+section#myPage .myPage_content .myPage_top ul li {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-left: 2px solid #e1e3e9;
+    background: #fff;
+    height: 100%;
+    cursor: pointer;
+}
+
+section#myPage .myPage_content .myPage_top ul li:nth-child(1) {
+    border: none;
+} 
+
+section#myPage .myPage_content .myPage_top ul li:hover {
+    transition: 400ms;
+}
+
+section#myPage .myPage_content .myPage_left {
+    padding-top: 60px;
+    float: left;
+    width: 160px;
+    min-height: 62vh;
+}
+
+section#myPage .myPage_content .myPage_left ul {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+section#myPage .myPage_content .myPage_left ul li {
+	cursor: pointer;
+    padding-top: 6px;
+    border: 1px solid #e1e3e9;
+    color: #42454d;
+    height: 30px;
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+
+section#myPage .myPage_content .myPage_left ul.sub {
+    display: none;
+}
+
+section#myPage .myPage_content .myPage_left ul.sub li {
+    background-color: #575b69;
+    color: #fff;
+}
+
+section#myPage .myPage_content .myPage_left ul.sub li a {
+    color: #42454d;
+    text-decoration: none;
+}
+
+section#myPage .myPage_content .myPage_left ul.sub li:hover {
+	transition: 500ms;
+    color: #42454d;
+    background-color: #e1e3e9;
+}
+
+section#myPage .myPage_content .myPage_left ul li:hover {
+    transition: 500ms;
+    color: #fff;
+    background-color: #575b69;
+}
+
+
+section#myPage .myPage_content .myPage_right {
+    padding-top: 60px;
+    float: right;
+    width: 830px;
+}
+
+section#myPage .myPage_content .myPage_right #myPage_main {
+	text-align: center;
+    width: 100%;
+}
+
+section#myPage .myPage_content .myPage_right #myPage_main .image {
+	cursor: pointer;
+	margin: 15px;
+	display: inline-block;
+}
+
+
+section#myPage .myPage_content .myPage_right #myPage_main table {
+	display: inline-block;
+    border-collapse: collapse;
+}
+
+section#myPage .myPage_content .myPage_right #myPage_main table a {
+	    color: #515359;
+	text-decoration: none;
+}
+
+section#myPage .myPage_content .myPage_right #myPage_main table th {
+    border-top: 2px solid #777777;
+    height: 45px;
+}
+
+section#myPage .myPage_content .myPage_right #myPage_main table td {
+	border-bottom: 1px solid #eee;
+	height: 35px;
+}
+
+section#myPage .myPage_content .myPage_right #myPage_main table td p {
+	margin: 0;
+}
+
+
+section#myPage .myPage_content .myPage_right #myPage_main  table button {
+	margin-top: 7px;
+	margin:5px;
+	outline: none;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top:5px;
+	padding-bottom:5px;
+	border:1px solid #575b69;
+	background-color: #575b69;
+	color: #fff;
+	font-size: 12px;
+}
+
+section#myPage .myPage_content .myPage_right #myPage_main table button:hover {
+	transition: 500ms;
+	background-color: #42454d;
+	color: #fff;
+}
+
+
+
+/* memberSimpleProfileBox css */
+
+section#myPage .memberSimpleProfileBox {
+    width: 100%;
+    height: 160px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section#myPage .memberSimpleProfileLine1 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+section#myPage .memberSimpleProfileLine2 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+section#myPage .memberSimpleProfileImgBox {
+    width: 80px;
+    height: 80px;
+}
+
+section#myPage .memberSimpleProfileImgBox>img {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50px;
+}
+
+section#myPage .memberSimpleProfileLine1Text {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section#myPage .memberSimpleProfileLine1Text>div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+section#myPage .memberSimpleProfileLine1Text>div>div {
+    padding: 0 10px;
+}
+
+section#myPage .memberSimpleProfile {
+    color: rgb(100, 100, 100);
+    font-size: 11px;
+}
+
+section#myPage .memberSimpleProfileTal {
+    width: 100%;
+    height: 24px;
+    display: table;
+    font-size: 11px;
+}
+
+section#myPage .memberSimpleProfileTalTitle {
+    padding: 0 5px;
+    display: table-cell;
+    text-align: left;
+}
+
+section#myPage .memberSimpleProfileTalContent {
+    width: 40%;
+    padding: 0 5px;
+    display: table-cell;
+    text-align: right;
+}
+
+/* 내정보보기 -> 회원수정 */
+
+section#myPage .myPage_content .myPage_MemberInfo_right {
+	float: right;
+	margin-left: 15px;
+	margin-top: 57px;
+	padding-top: 20px;
+	padding-bottom: 60px;
+	width: 800px;
+	background-color: #fff;
+	border-radius: 6px;
+	text-align: center;
+}
+
+section#myPage .myPage_content .myPage_MemberInfo_right  table {
+	border-collapse: collapse;
+	display: inline-block;
+}
+
+
+section#myPage .myPage_content .myPage_MemberInfo_right  table tr:nth-last-child(1) {
+	background-color: #fff;
+}
+
+section#myPage .myPage_content .myPage_MemberInfo_right  table input {
+	outline: none;
+	padding-left:10px;
+	width: 220px;
+	height: 26px;
+	border: 1px solid #dedede;
+	background-color: #fff;
+	font-size: 13px;
+}
+
+section#myPage .myPage_content .myPage_MemberInfo_right  table button {
+	margin-top: 7px;
+	margin:5px;
+	outline: none;
+	width: 110px;
+	height: 32px;
+	border:1px solid #575b69;
+	background-color: #575b69;
+	color: #fff;
+	font-size: 12px;
+}
+
+section#myPage .myPage_content .myPage_MemberInfo_right  table button:hover {
+	transition: 500ms;
+	background-color: #42454d;
+	color: #fff;
+}
+
+section#myPage .myPage_content .myPage_MemberInfo_right  table td {
+	height: 45px;
+	text-align: left;
+}
+
+
+/* 내정보보기 - 비밀번호 변경 */
+
+
+section#myPage .myPage_content .myPage_MemberPwd_right {
+	float: right;
+	margin-left: 15px;
+	margin-top: 57px;
+	padding-top: 20px;
+	padding-bottom: 60px;
+	width: 800px;
+	background-color: #fff;
+	border-radius: 6px;
+	text-align: center;
+}
+
+section#myPage .myPage_content .myPage_MemberPwd_right  table {
+	border-collapse: collapse;
+	display: inline-block;
+}
+
+
+section#myPage .myPage_content .myPage_MemberPwd_right  table tr:nth-last-child(1) {
+	background-color: #fff;
+}
+
+section#myPage .myPage_content .myPage_MemberPwd_right  table input {
+	outline: none;
+	padding-left:10px;
+	width: 220px;
+	height: 26px;
+	border: 1px solid #dedede;
+	background-color: #fff;
+	font-size: 13px;
+}
+
+section#myPage .myPage_content .myPage_MemberPwd_right  table button {
+	margin-top: 7px;
+	margin:5px;
+	outline: none;
+	width: 110px;
+	height: 30px;
+	border:1px solid #2c2c2c;
+	background-color: #575b69;
+	color: #fff;
+	font-size: 12px;
+}
+
+section#myPage .myPage_content .myPage_MemberPwd_right  table button:hover {
+	transition: 500ms;
+	background-color: #252525;
+	color: #fff;
+}
+
+section#myPage .myPage_content .myPage_MemberPwd_right  table td {
+	height: 45px;
+	text-align: left;
+}
+
+
+/* 게시판용 css */
+section#myPage .myPage_content .myPage_board_right {
+	float: right;
+	margin-left: 15px;
+	margin-top: 57px;
+	padding-top: 20px;
+	padding-left: 15px;
+	padding-bottom: 60px;
+	width: 800px;
+	background-color: #fff;
+	border-radius: 6px;
+	text-align: center;
+}
+
+section#myPage .myPage_content .myPage_board_right  table {
+	border-collapse: collapse;
+	display: inline-block;
+}
+
+section#myPage .myPage_content .myPage_board_right  table th {
+	border-top: 2px solid #42454d;
+	height: 45px;
+	border-bottom: 1px solid #e1e3e9;
+	background-color: #fff;
+}
+
+section#myPage .myPage_content .myPage_board_right  table tr:hover{
+	background-color: #eee;
+	transition: 500ms;
+}
+
+section#myPage .myPage_content .myPage_board_right  table tr:nth-last-child(1) {
+	background-color: #fff;
+}
+
+section#myPage .myPage_content .myPage_board_right  table input {
+	outline: none;
+	padding-left:10px;
+	width: 220px;
+	height: 26px;
+	border: 1px solid #dedede;
+	background-color: #fff;
+	font-size: 13px;
+}
+
+section#myPage .myPage_content .myPage_board_right  table button {
+		margin-top: 7px;
+	margin:5px;
+	outline: none;
+	width: 110px;
+	height: 30px;
+	border:1px solid #575b69;
+	background-color: #42454d;
+	color: #fff;
+	font-size: 12px;
+}
+
+section#myPage .myPage_content .myPage_board_right  table button:hover {
+	transition: 500ms;
+	background-color: #575b69;
+	color: #fff;
+}
+
+section#myPage .myPage_content .myPage_board_right  table td {
+	height: 40px;
+	border-bottom: 1px solid #eee;
+}
+
+section#myPage .myPage_content .myPage_board_right  table span {
+	padding-left:10px;
+	padding-right: 10px;
+	padding-top:5px;
+	padding-bottom:5px;
+	border: 1px solid #eee;
+	color: #252525;
+	text-decoration: none;
+}
+
+section#myPage .myPage_content .myPage_board_right  table a{
+	padding-left:10px;
+	padding-right: 10px;
+	padding-top:5px;
+	padding-bottom:5px;
+	border: 1px solid #eee;
+	color: #252525;
+	text-decoration: none;
+}
+
+section#myPage .myPage_content .myPage_board_right  table span:hover {
+	transition: 400ms;
+	background-color: #444;
+	color:#fff;
+}
+
+section#myPage .myPage_content .myPage_board_right  table a:hover {
+	transition: 400ms;
+	background-color: #444;
+	color:#fff;
+}
+
+

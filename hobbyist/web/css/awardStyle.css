@@ -1,0 +1,529 @@
+
+section#award .awardSortBtn {
+    display: inline-block;
+    cursor: pointer;
+    width: 100px;
+    height: 29px;
+    padding-top: 7px;
+    background:none;
+    color: #424242;
+    border: 1px solid #dadada;
+    outline: none;
+    font-size: 12px;
+    margin-right: 3px;
+}
+
+section#award .awardSortBtn:hover  {
+    transition: 500ms;
+    background-color: #575b69;
+    color: #fff;
+}
+
+#award .awardSortBtn1 {
+    display: inline-block;
+    cursor: pointer;
+    width: 100px;
+    height: 26px;
+    padding-top: 7px;
+    background-color: #fff;
+    color: #424242;
+    border-bottom: 2px solid #575b69;
+    outline: none;
+    font-size: 12px;
+}
+
+#award .awardSortBtn1:hover  {
+    transition: 500ms;
+    background-color: #eee;
+}
+
+
+/* -------------------------------------------- */
+
+section#award {
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+
+section#award .award_content {
+	width: 990px;
+	padding-top: 120px; /* 기본메뉴만큼 띄우기 */
+	text-align: center;
+	display: inline-block;
+}
+
+section#award .award_content #award_left {
+	display: inline-block;
+	width: 0px;
+	height: 600px;
+	position: fixed;
+	overflow-x: hidden;
+	overflow: hidden; /* 넘치는 영역 자르기 */
+	background-color: rgba(255, 255, 255, 0.904);
+}
+
+section#award .award_content #shop_left #award_sub {
+	display: inline-block;
+	width: 100%;
+}
+
+section#award .award_content #award_left #award_sub h3 {
+	margin: 0;
+	margin-bottom: 10px;
+	padding-top: 20px;
+	padding-left: 15px;
+}
+
+section#award .award_content #award_left #award_sub ul {
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+	list-style-type: none;
+}
+
+section#award .award_content #award_left #award_sub ul li {
+	cursor: pointer;
+	width: 100%;
+	padding-top: 6px;
+	padding-left: 15px;
+	height: 27px;
+	font-size: 13px;
+}
+
+section#award .award_content #award_left #award_sub ul li:hover {
+	transition: 500ms;
+	background-color: lightgrey;
+}
+
+section#award .award_content #slideButton {
+	cursor: pointer;
+	position: fixed;
+	/* margin-left: 215px; */
+	text-align: center;
+	vertical-align: top;
+	display: inline-block;
+	width: 30px;
+	padding-top: 5px;
+	height: 115px;
+	font-size: 13px;
+	border: 1px solid rgb(199, 199, 199);
+}
+
+section#award .award_content #award_right {
+	display: inline-block;
+	margin-left: 50px;
+	width: 945px;
+	padding-top: 15px;
+	padding-bottom: 60px;
+	transition: 400ms;
+	font-size: 14px;
+	text-align: left;
+}
+
+section#award .award_content #award_right .award_bottom2 {
+    display: inline-block;
+    width:100%;
+    text-align: center;
+}
+
+section#award .award_content #award_right .award_bottom2 button {
+	width: 200px;
+	height: 45px;
+	color: #fff;
+	background-color: #575b69;
+	border: 1px solid #444;
+	outline: none;
+}
+
+section#award .award_content #award_right .award_bottom2 button:hover {
+	background-color: #575b69;
+	transition: 400ms;
+}
+
+section#award .award_content #award_right .award_top {
+	width: 100%;
+	height: 50px;
+}
+
+section#award .award_content #award_right b {
+	font-size: 15px;
+	font-weight: 300;
+	margin: 0;
+	padding: 10px;
+}
+
+section#award .award_content #award_right .award_top {
+	height: 50px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #eee;
+	vertical-align: top; /* text를 위에서부터 쌓는다 */
+}
+
+section#award .award_content #award_right .award_top .sort {
+	vertical-align: top;
+	text-align: center;
+	padding-left: 15px;
+	float: left;
+	display: flex; /* 공간있을 때 자동으로 옆으로 정렬한다 */
+}
+
+section#award .award_content #award_right .award_top .searchForm {
+	float: right;
+	color: #252525;
+	font-size: 13px;
+	letter-spacing: -0.5px;
+}
+
+section#award .award_content #award_right .award_middle {
+	display: inline-block;
+	text-align: center;
+	transition: 400ms;
+	width: 100%;
+}
+
+section#award .award_content #award_right .award_middle #tbl-awardForm td {
+	height: 40px;
+}
+
+section#award .award_content #award_right .award_middle #tbl-awardForm input {
+	height: 30px;
+	border: 2px solid #e1e3e9;
+	padding-left: 15px;
+	outline: none;
+}
+
+section#award .award_content #award_right .award_middle #tbl-awardForm button {
+	margin-top: 30px;
+	width: 200px;
+	height: 35px;
+	color: #fff;
+	background-color: #575b69;
+	border: none;
+}
+
+section#award .award_content #award_right .award_middle #tbl-awardForm button:hover {
+	background-color: #575b69;
+	transition: 300ms;
+}
+
+section#award .award_content #award_right .award_middle .award_imgbox {
+	text-align: center;
+	position: relative;
+    width: 220px;
+    height: 220px;
+    margin: 5px;
+	display: inline-block;
+	cursor: pointer;
+	overflowY: hidden;
+}
+
+section#award .award_content #award_right .award_middle .award_imgbox .award_img{
+	width: 220px;
+	height: 220px;
+	position: absolute;
+}
+
+
+section#award .award_content #award_right .award_middle .award_imgbox .award_img_hover1{
+	transition: 400ms;
+	width: 220px;
+	height: 130px;
+	position: absolute;
+	padding-top: 90px;
+	background-color: black;
+	display: none;
+	color:#fff;
+	opacity: 0.7;
+}
+
+section#award .award_content #award_right .award_middle .award_imgbox .award_img_hover1 a {
+	color: #fff;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+/* section#award .award_content #award_right .award_middle .award_imgbox .award_img_hover {
+	width: 20%;
+	height: 100%;
+	margin: 100%;
+	display: inline-block;
+	cursor:pointer;
+	z-index: 10;
+	
+	background-color: rgba(0,0,0,0.2);
+	
+} */
+
+/* ====여기이미지 호버===
+section#award .award_content #award_right .award_middle .award_imgbox img:hover
+	{
+	transition: 500ms;
+	background-color: #000040;
+	opacity: 0.8;
+} */
+
+/* section#award .award_content #award_right .award_middle .award_imgbox a {
+	width: 20%;
+	height: 100px;
+	display: inline-block;
+	cursor:pointer;
+
+} */
+=====리스트이미지=====
+
+
+
+section#award .award_content #award_right .award_bottom {
+	display: inline-block;
+    width: 100%;
+    text-align: center;
+    transition: 400ms;
+    font-size: 13px;
+
+}
+
+section#award .award_content #award_right .award_bottom a,section#award .award_content #award_right .award_bottom span{
+	padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    text-decoration: none;
+    color: #252525;
+    border: 1px solid #eee;
+    font-size: 14px;
+}
+==========================awardView ========================
+section#award .award_content #award_right .award_top_left .award_board_no{
+	float: left;
+	vertical-align: top;
+	vertical-align:bottom;
+	text-align: center;
+	padding-left: 15px;
+	display: flex;
+}
+
+section#award .award_content #award_right .award_top_right .award_board_date{
+	float: right;
+	color: #252525;
+	font-size: 13px;
+	letter-spacing: -0.5px;
+}
+
+section#award .award_content #award_right .award_board_view {
+	display: inline-block;
+	text-align: center;
+}
+
+
+section#award .award_content #award_right .award_board_view .award_board_view_name {
+	display: block;
+	width: 990px;
+	height: 50px;
+	border-top: 1px soldi #eee;
+	border-botom: 1px solid #eee;
+	font-size: 20px;
+	text-align: center;
+}
+
+section#award .award_content #award_right .award_board_view .award_board_view_writer {
+	display: block;
+	width: 990px;
+	height: 50px;
+	font-size: 14px;
+	text-align: center;
+	border-top: 1px soldi #eee;
+	border-botom: 1px solid #eee;
+}
+
+section#award .award_content #award_right .award_board_view .award_board_view_content {
+	display: block;
+	width: 990px;
+}
+
+section#award .award_content #award_right .award_board_view #awardlike_btn {
+	display: inline-block;
+	background-color: #eee;
+	border-radius: 4px;
+	width: 400px;
+	height: 30px;
+	padding-top: 8px;
+}
+section#award .award_content #award_right .award_board_view .section#award .award_content #award_right .award_board_view img{
+	text-align: center;
+	display: inline-block;
+	float:center;
+}
+
+section#award .award_content #award_right .award_board_view_bottom {
+	padding-top: 60px;
+	width: 990px;
+	display: inline-block;
+	text-align: center;
+}
+
+section#award .award_content #award_right .award_board_view_bottom button {
+	width: 130px;
+	height: 40px;
+	border: 1px solid #eee;
+	background-color: #fff;
+}
+
+section#award .award_content #award_right .award_board_view_bottom button:hover {
+	background-color: #252525;
+	transition: 400ms;
+	color: #fff;
+}
+
+section#award .award_content #award_right .award_top span{
+	 color: #9d9da4;
+	
+}
+
+section#award textarea{
+	margin-top:40px;
+	width:600px;
+	height:100px;
+}
+
+section#award .award_content #award_right .view_comment #btn-insert{
+	
+}
+
+
+===============search===============
+section#award .award_content #award_right .award_top .searchForm {
+    float: right;
+    color: #252525;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+}
+
+section#award .award_content #award_right .award_top .searchForm input[type=search] {
+    border: 2px solid #e1e3e9;
+    outline: none;
+    height: 30px;
+}
+
+section#award .award_content #award_right .award_top .searchForm input[type=search]:focus {
+    transition: 500ms;
+    border: 2px solid #e1e3e9;
+}
+
+section#award .award_content #award_right .award_top .searchForm button {
+    vertical-align: bottom;
+    padding-top: 5px;
+    height: 30px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+====================이미지박스=========================
+
+#award .inputImageBox {
+    width: 600px;
+    height: 250px;
+}
+
+#award .inputImageBox .inputImageback {
+   position: relative;
+   width:100%;
+   height:250px;
+   border: 1px solid #C3C3D8;
+   background-color: #C3C3D8;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   border-radius: 5px;
+}
+
+#award .inputImageBox .inputImageFile {
+   position: absolute;
+   width:100%;
+   height:100%;
+   opacity: 0;
+}
+
+#award .inputImageBox .inputImage {
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+#award .inputImageBox .inputImage img {
+   width:100px;
+   height:100px;
+   border-radius: 5px;
+}
+
+#award .inputImageBox .wEnrollPreMemberImageBox img {
+   width: 100px;
+   height: 100px;
+   border-radius: 50px;
+}
+
+==========================
+
+
+section#award .award_content #award_right .award_bottom2 #btn_add {
+    width: 180px;
+    height: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    background: none;
+    outline: none;
+   	cursor:pointer;
+    border: 1px solid #252525;
+	
+}
+
+section#award .award_content #award_right .award_bottom2 #btn_add:hover {
+    transition: 400ms;
+    color: #fff;
+    background-color: #575b69;
+    border: 1px solid #252525;
+	
+}
+section#award .award_content #award_right #review {
+    display: inline-block;
+    width: 900px;
+    text-align: center;
+    vertical-align: top;
+}
+
+section#award .award_content #award_right #review textarea {
+	display: inline-block;
+	vertical-align: top;
+	height: 120px;
+}
+
+section#award .award_content #award_right #review #btn-insert {
+	display: inline-block;
+    vertical-align: top;
+	width: 120px;
+	height: 120px;
+	border: 1px solid #eee;
+	background:none;
+}
+
+section#award .award_content #award_right #review #btn-insert:hover {
+	transition: 400ms;
+	background-color: #575b69;
+	color: #fff;
+}
+
+section#award .award_content #award_right #review table {
+	display: inline-block;
+}
+
+section#award .award_content #award_right #review table button {
+	border: 1px solid #444;
+	background-color: #fff;
+	outline: none;
+}

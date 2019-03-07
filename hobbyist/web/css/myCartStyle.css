@@ -1,0 +1,148 @@
+/* ----------------------------- 장바구니 ------------------------------ */
+
+section#cart {
+    text-align: center;
+    color: #333;
+}
+
+section#cart .cart_content {
+    display: inline-block;
+    text-align: center;
+    width: 970px;
+    padding-top: 163px;
+    padding-bottom: 100px;
+}
+
+section#cart .cart_content .mycart_banner {
+	width: 950px;
+	height: 55px;
+	border: 1px solid #ddd;
+	text-align: left;
+	padding-left: 20px;
+	font-size: 14px;
+}
+
+section#cart .cart_content ul.mycart_submenu {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	list-style: none;
+	margin-top: 20px;
+}
+
+section#cart .cart_content ul.mycart_submenu li {
+	margin:0;
+	padding:0;
+	cursor: pointer;
+	border: none;
+	border: 1px solid #eaeaea;
+	display: inline-block;
+	padding-top: 10px;
+	padding-left: 17px;
+	font-size: 13px;
+	width: 130px;
+	height: 32px;
+}
+
+section#cart .cart_content ul.mycart_submenu li:hover {
+	transition: 400ms;
+	background-color: #575b69;
+	color: #fff;
+} 
+
+.addCartSelected {
+	transition: 400ms;
+	background-color: #575b69;
+	color: #fff;
+} 
+
+section#cart .cart_content table input[type=checkbox] {
+	transform: scale(1.5);
+}
+
+section#cart .cart_content table {
+	display: inline-block;
+	border-collapse: collapse;
+	font-size: 13px;
+}
+
+section#cart .cart_content th {
+	border-top: 1px solid #eee;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 13px;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+section#cart .cart_content tr {
+}
+
+section#cart .cart_content tr:hover {
+	transition: 400ms;
+	border-left: 3px solid #575b69;
+}
+
+section#cart .cart_content tr:nth-child(1):hover , section#cart .cart_content tr:nth-last-child(1):hover {
+	border: none;
+}
+
+section#cart .cart_content tr:nth-last-child(1) {
+}
+
+section#cart .cart_content td {
+	border-bottom: 1px solid #eee;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+section#cart .cart_content td.result {
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-top: 1px solid #eee;
+	font-size: 15px;
+	color: #575b69;
+}
+
+section#cart .cart_content table button {
+	margin: 5px;
+	border: 1px solid #e7e7e7;
+	outline: none;
+	background-color: #575b69;
+	color: #fff;
+	width: 120px;
+	height: 35px;
+}
+
+section#cart .cart_content table button:nth-child(2) {
+	margin-right: 15px;
+}
+
+section#cart .cart_content table button:hover {
+	transition: 400ms;
+	background-color: #212c3a;
+	color: #fff;
+}
+
+section#cart .cart_content table button:nth-child(2):hover {
+	transition: 400ms;
+	background-color: #881515;
+}
+
+section#cart .cart_content table h3 {
+	margin: 0;
+	padding:0;
+	font-size: 14px;
+}
+
+section#cart .cart_content table a {
+	color: #444;
+	text-decoration: none;
+}
+
+section#cart .cart_content table a:hover {
+	transition: 500ms;
+	color: #575b69;
+	text-decoration: underline;
+}

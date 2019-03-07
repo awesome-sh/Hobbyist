@@ -1,0 +1,759 @@
+/* ------------------------------ 원데이 클래스 ------------------------------- */
+
+section#oneday {
+    width: 100%;
+    text-align: center;
+}
+
+section#oneday .oneday_content {
+    display: inline-block;
+    text-align: left;
+    width: 990px;
+    padding-top: 100px;
+}
+
+section#oneday .oneday_content #oneday_left {
+    display: inline-block;
+    width: 0px;
+    height: 100vh;
+    position: fixed;
+    overflow-x: hidden;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.904);
+}
+
+section#oneday .oneday_content #oneday_left #oneday_sub {
+    display: inline-block;
+    width: 100%;
+}
+
+section#oneday .oneday_content #oneday_left #oneday_sub h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+
+section#oneday .oneday_content #oneday_left #oneday_sub ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+section#oneday .oneday_content #oneday_left #oneday_sub ul li {
+    cursor: pointer;
+    width: 100%;
+    padding-top: 6px;
+    padding-left: 15px;
+    height: 27px;
+    color: #3a3a3a;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+    border-bottom: 1px solid #eee;
+}
+
+section#oneday .oneday_content #oneday_left #oneday_sub ul li:hover {
+    transition: 500ms;
+    background-color: #eee;
+}
+
+section#oneday .oneday_content #slideButton {
+    cursor: pointer;
+    position: fixed;
+    /* margin-left: 215px; */
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
+    width: 30px;
+    padding-top: 5px;
+    height: 115px;
+    font-size: 13px;
+    border: 1px solid #e0e0e0;
+}
+
+section#oneday .oneday_content #slideButton:hover {
+    transition: 400ms;
+    background-color: #f0f0f0;
+    color:#333333;
+}
+
+
+section#oneday .oneday_content #oneday_right {
+    display: inline-block;
+    margin-left: 50px;
+    width: 945px;
+    padding-top: 15px;
+    padding-bottom: 60px;
+    transition: 400ms;
+    font-size: 13px;
+    color: #3b3b3b;
+}
+
+section#oneday .oneday_content #oneday_right h3 {
+    font-size: 15px;
+    margin: 0;
+    padding: 15px;
+    padding-left: 20px;
+}
+
+section#oneday .oneday_content #oneday_right p {
+    font-size: 13px;
+    margin: 0;
+    padding-left: 20px;
+}
+
+section#oneday .oneday_content #oneday_right .oneday_banner {
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 920px;
+    height: 160px;
+    border: 1px solid #dddddd;
+    background-image: url('../images/oneday_top.jpg');
+}
+
+section#oneday .oneday_content #oneday_right .oneday_top {
+    height:50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+}
+
+section#oneday .oneday_content #oneday_right .oneday_top .sort {
+    vertical-align: top;
+    float: left;
+    text-align: center;
+    padding-left: 15px;
+}
+
+section#oneday .oneday_content #oneday_right .oneday_top .sort .sortBtn {
+    display: inline-block;
+    cursor: pointer;
+    width: 110px;
+    height: 28px;
+    padding-top: 9px;
+    background:none;
+    color: #32343a;
+    border: 1px solid #e1e3e9;
+    outline: none;
+    font-size: 12px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+section#oneday .oneday_content #oneday_right .oneday_top .sort .selected {
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    background: #575b69;
+    outline: none;
+}
+
+section#oneday .oneday_content #oneday_right .oneday_top .sort .sortBtn:hover {
+    transition: 500ms;
+    background-color: #575b69;
+    color: #fff;
+}
+
+section#oneday .oneday_content #oneday_right .oneday_top .sort .selected:hover {
+    transition: 500ms;
+    background-color: #252525;
+    color: #fff;
+}
+
+
+section#oneday .oneday_content #oneday_right .oneday_top .sort button img {
+    padding-right: 5px;
+    width: 12px;
+}
+
+section#oneday .oneday_content #oneday_right .oneday_top .searchForm {
+    float: right;
+    color: #252525;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+}
+
+section#oneday .oneday_content #oneday_right .oneday_top .searchForm input[type=search] {
+    border: 1px solid #dadada;
+    outline: none;
+    height: 30px;
+}
+
+section#oneday .oneday_content #oneday_right .oneday_top .searchForm input[type=search]:focus {
+    transition: 500ms;
+    border: 1px solid #252525;
+}
+
+section#oneday .oneday_content #oneday_right .oneday_top .searchForm button {
+    vertical-align: bottom;
+    padding-top: 5px;
+    height: 30px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+section#oneday .oneday_content #oneday_right .oneday_top .searchForm #ajaxSearch {
+    font-size: 13px; 
+    letter-spacing:-0.5px; 
+    padding-left: 15px;
+    display: none; 
+    width: 204px;
+    position:absolute; 
+    z-index: 5; 
+    background-color: #fff; 
+    border: 1px solid #888888;
+}
+
+
+section#oneday .oneday_content #oneday_right .oneday_middle {
+    display: inline-block;
+    text-align: center;
+    transition: 400ms;
+}
+
+section#oneday .oneday_content #oneday_right .oneday_middle .item {
+    vertical-align: top;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 920px;
+    padding: 5px;
+    text-align: center;
+    transition: 400ms;
+    border: 2px solid #fff;
+}
+
+section#oneday .oneday_content #oneday_right .oneday_middle .item #img {
+	width: 270px;
+	height: 160px;
+	overflowY: hidden;
+}
+
+section#oneday .oneday_content #oneday_right .oneday_middle .item p {
+    font-size: 12px;
+    letter-spacing: -0.4px;
+    color: #32343a;
+    margin: 4px;
+}
+
+section#oneday .oneday_content #oneday_right .oneday_middle .item:hover {
+	transition: 700ms;
+	border: 2px solid #c8cad1;
+}
+
+section#oneday .oneday_content #oneday_right .oneday_middle .item:hover img {
+	transition: 800ms;
+	transform: scale(1.2);
+}
+
+section#oneday .oneday_content #oneday_right .oneday_middle .item ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+section#oneday .oneday_content #oneday_right .oneday_middle .item ul li {
+	display: inline-block;
+	vertical-align: middle;
+    padding-top: 6px;
+    text-align: center;
+    border-left: 1px solid #eee;
+}
+
+section#oneday .oneday_content #oneday_right .oneday_middle .item ul li:nth-child(1) {
+	width: 80px;
+	text-align: center;
+	border: none;
+}
+
+section#oneday .oneday_content #oneday_right .oneday_middle .item ul li:nth-child(2) {
+	width: 260px;
+	text-align: center;
+}
+
+section#oneday .oneday_content #oneday_right .oneday_middle .item ul li:nth-child(3) {
+	width: 350px;
+	text-align: center;
+}
+
+section#oneday .oneday_content #oneday_right .oneday_middle .item ul li:nth-child(4) {
+	width: 210px;
+	text-align: center;
+}
+
+section#oneday .oneday_content #oneday_right .oneday_middle .item #img {
+	width: 250px;
+	overflow: hidden;
+}
+
+section#oneday .oneday_content #oneday_right .oneday_middle .item ul li.title a {
+    font-size: 16px;
+    font-weight: 600;
+    height: 30px;
+    color: #383838;
+    text-decoration: none;
+}
+
+section#oneday .oneday_content #oneday_right .oneday_middle .item ul li.title a:hover{
+    transition: 500ms;
+    text-decoration: underline;
+    color: #575b69;
+}
+
+section#oneday .oneday_content #oneday_right .oneday_middle .item button {
+    width: 130px;
+    height: 35px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    background: none;
+    outline: none;
+    border: 1px solid #252525;
+}
+
+section#oneday .oneday_content #oneday_right .oneday_middle .item button:hover {
+    transition: 400ms;
+    color: rgb(216, 216, 192);
+    background-color: #252525;
+    border: 1px solid #252525;
+}
+
+section#oneday .oneday_content #oneday_right .oneday_bottom {
+    display: inline-block;
+    width:100%;
+    text-align: center;
+    transition: 400ms;
+    font-size: 13px;
+}
+
+section#oneday .oneday_content #oneday_right .oneday_bottom a, section#oneday .oneday_content #oneday_right .oneday_bottom span {
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    text-decoration: none;
+    color: #252525;
+    border: 1px solid #eee;
+    font-size: 14px;
+}
+
+
+/* -------------------------------------------- 원데이클래스 상세페이지 -------------------------------------------- */
+
+
+section#onedayView {
+    width: 100%;
+    text-align: center;
+}
+
+section#onedayView .onedayView_content {
+    display: inline-block;
+    text-align: center;
+    width: 990px;
+    padding-top: 140px;
+<<<<<<< HEAD
+=======
+    color: #32343a;
+>>>>>>> branch 'master' of https://github.com/semi-hobbyist/hobbyist.git
+}
+
+
+section#onedayView .onedayView_content .view_right .view_menu {
+    width: 988px;
+    height: 40px;
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+}
+
+section#onedayView .onedayView_content .view_right .view_menu ul {
+    list-style-type: none;
+    width: 100%;
+    padding-left: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+section#onedayView .onedayView_content .view_right .view_menu ul li {
+	display: inline-block;
+    cursor: pointer;
+    padding-top: 10px;
+    width: 170px;
+    height: 30px;
+    color: #32343a;
+    font-size: 13px;
+    letter-spacing: -0.4px;
+}
+
+section#onedayView .onedayView_content .view_right .view_menu ul li:hover {
+    transition: 500ms;
+    color: #575b69;
+}
+
+
+section#onedayView .onedayView_content .view_right {
+    display: block;
+    width: 990px;
+    padding-top:10px;
+    overflow: hidden;
+}
+
+section#onedayView .onedayView_content .view_right .view_top_info {
+    text-align: left;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+    color: #32343a;
+    padding-left: 10px;
+    height: 45px;
+}
+
+/* 클래스 상세페이지 -> 상품이미지 */
+section#onedayView .onedayView_content .view_right .view_top_left {
+    display: inline-block;
+    vertical-align: top;
+    width: 530px;
+}
+
+section#onedayView .onedayView_content .view_right .view_top_left b {
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 16px;
+	margin-right: 15px;
+	margin-bottom: 5px;
+	background-color: #575b69;
+	color: #fff;
+}
+
+section#onedayView .onedayView_content .view_right .view_top_left img {
+	margin-top: 20px;
+}
+
+section#onedayView .onedayView_content .view_right .view_top_right {
+    display: inline-block;
+    vertical-align: top;
+    width: 450px;
+    color: #252525;
+}
+
+section#onedayView .onedayView_content .view_right .view_top_right h2 {
+	margin: 0;
+	padding: 0;
+}
+
+section#onedayView .onedayView_content .view_right .view_top_right a {
+    font-size: 13px;
+    color: #252525;
+    text-decoration: none;
+}
+
+section#onedayView .onedayView_content .view_right .view_top_right a:hover {
+    transition: 400ms;
+    color: #575b69;
+    background-color:#e7e7e7;
+    text-decoration: underline;
+}
+
+section#onedayView .onedayView_content .view_right .view_top_right table {
+    display: inline-block;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+section#onedayView .onedayView_content .view_right .view_top_right table td {
+    width: 200px;
+    height: 36px;
+}
+
+section#onedayView .onedayView_content .view_right .view_top_right table .tdclass {
+    width: 400px;
+    text-align: left;
+    font-size: 14px;
+}
+
+section#onedayView .onedayView_content .view_right .view_top_right table select {
+	border: 1px solid #eee;
+	height: 28px;
+	outline: none;
+	width: 80%;
+}
+
+section#onedayView .onedayView_content .view_right .view_top_right table select option:hover {
+	background-color: #eee;
+}
+
+section#onedayView .onedayView_content .view_right .view_top_right button.api {
+	vertical-align: top;
+	padding-bottom: 10px;
+    width: 150px;
+    height: 40px;
+    background:none;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    margin: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+section#onedayView .onedayView_content .view_right .view_top_right button {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 150px;
+    height: 40px;
+    background:none;
+    outline: none;
+    font-size: 13px;
+    border: 1px solid #e1e3e9;
+    margin: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+section#onedayView .onedayView_content .view_right .view_top_right button.api:nth-child(1) {
+	background-image: url('../images/kakao-share-button.png');
+	background-size: 100%;
+	border:none;
+	border-bottom: 1px solid #fff;
+} 
+
+section#onedayView .onedayView_content .view_right .view_top_right button.api:nth-child(2) {
+	background-image: url('../images/naver-short-button.png');
+	background-size: 100%;
+	border:none;
+	border-bottom: 1px solid #fff;
+} 
+
+
+section#onedayView .onedayView_content .view_right .view_top_right button:hover {
+    transition: 400ms;
+    background-color: #252525;
+    color: #fff;
+}
+
+section#onedayView .onedayView_content .view_right .view_top_right button.addcart-btn {
+	width: 290px;
+	height: 46px;
+	font-size: 13px;
+	font-weight: bold;
+	letter-spacing: -0.4px;
+	border: 2px solid #e1e3e9;
+}
+
+section#onedayView .onedayView_content .view_right .view_top_right button.addcart-btn:hover {
+	background-color: #575b69;
+	border: 2px solid #575b69;
+}
+
+section#onedayView .onedayView_content .view_right #about {
+    margin-top: 60px;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #d6d6d6;
+    padding-top: 210px;
+}
+
+section#onedayView .onedayView_content .view_right #review {
+    display: block;
+    width: 780px;
+    padding-top: 200px;
+    text-align: center;
+}
+
+section#onedayView .onedayView_content .view_right #review button {
+    width: 160px;
+    height: 45px;
+    color: #252525;
+    background-color: #fff;
+    border: 1px solid #999999;
+    outline: none;
+}
+
+section#onedayView .onedayView_content .view_right #review button:hover {
+    transition: 400ms;
+    background-color: #252525;
+    color: #fff;
+}
+
+section#onedayView .onedayView_content .view_right #review .review-container {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #e7e7e7;
+    text-align: center;
+    color: #32343a;
+}
+
+section#onedayView .onedayView_content .view_right #review .review-container button {
+    width: 80px;
+    height: 110px;
+}
+
+section#onedayView .onedayView_content .view_right #review table#review_tbl {
+    display: inline-block;
+    border-collapse: collapse;
+    color: #32343a;
+}
+
+section#onedayView .onedayView_content .view_right #review table#review_tbl th {
+    background-color: #fff;
+    height: 35px;
+    letter-spacing: -0.5px;
+    border-bottom: 1px solid #c2c2c2;
+}
+
+section#onedayView .onedayView_content .view_right #review table#review_tbl td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+section#onedayView .onedayView_content .view_right #review table#review_tbl td a {
+    text-decoration: none;
+    color: #252525;
+}
+
+section#onedayView .onedayView_content .view_right #review table#review_tbl td a:hover {
+    text-decoration: underline;
+}
+
+section#onedayView .onedayView_content .view_right #review table#review_tbl button {
+    margin: 3px;
+    width: 30px;
+    height: 25px;
+    border: 1px solid #eee;
+    height: 30px;
+}
+
+section#onedayView .onedayView_content .view_right #review table#review_tbl button#curPage {
+    background-color: #252525;
+    color: #fff;
+    height: 30px;
+}
+
+section#onedayView .onedayView_content .view_right #policy {
+    display: block;
+    padding-left: 15px;
+    text-align: left;
+    font-size: 14px;
+    letter-spacing: -0.7px;
+    color: #414141;
+    width: 100%;
+    padding-top: 220px;
+    padding-bottom: 50px;
+}
+
+
+/* 상품등록 페이지 */
+
+section#onedayWrite {
+    width: 100%;
+    text-align: center;
+}
+
+section#onedayWrite .onedayWrite_content {
+    display: inline-block;
+    text-align: center;
+    width: 990px;
+    padding-top: 210px;
+}
+
+section#onedayWrite .onedayWrite_content .onedayWrite_left {
+    text-align: left;
+    position: fixed;
+    width: 200px;
+    height: 250px;
+}
+
+section#onedayWrite .onedayWrite_content .onedayWrite_left h3 {
+    padding-left: 15px;
+}
+
+section#onedayWrite .onedayWrite_content .onedayWrite_left ul {
+    list-style-type: none;
+    width: 100%;
+    padding-left: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+section#onedayWrite .onedayWrite_content .onedayWrite_left ul li {
+    cursor: pointer;
+    padding-top: 7px;
+    padding-left: 15px;
+    height: 28px;
+    color: #32343a;
+    font-size: 13px;
+    letter-spacing: -0.4px;
+}
+
+section#onedayWrite .onedayWrite_content .onedayWrite_left ul li:hover {
+    transition: 500ms;
+    color: #a6aa7d;
+}
+
+
+section#onedayWrite .onedayWrite_content .onedayWrite_right {
+    display: block;
+    text-align: left;
+    padding-left: 200px;
+    width: 785px;
+}
+
+section#onedayWrite .onedayWrite_content .onedayWrite_right table {
+    font-size: 14px;
+    letter-spacing: -0.6px;
+    border-collapse: collapse;
+}
+
+section#onedayWrite .onedayWrite_content .onedayWrite_right table th {
+    width: 150px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    height: 36px;
+    border-bottom: 1px solid #eee;
+}
+
+section#onedayWrite .onedayWrite_content .onedayWrite_right table td {
+    width: 635px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+section#onedayWrite .onedayWrite_content .onedayWrite_right input[type=text] {
+    vertical-align: top;
+    height: 28px;
+    padding-left: 15px;
+}
+
+section#onedayWrite .onedayWrite_content .onedayWrite_right select {
+    vertical-align: top;
+    height: 33px;
+    padding-left: 7px;
+    padding-right: 7px;
+    outline: none;
+}
+
+section#onedayWrite .onedayWrite_content .onedayWrite_right button {
+    font-size: 13px;
+    margin-left: 6px;
+    background: none;
+    outline: none;
+    border: 1px solid #9c9c9c;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+section#onedayWrite .onedayWrite_content .onedayWrite_right button:hover {
+    transition: 400ms;
+    background-color: #252525;
+    color: #fff;
+}

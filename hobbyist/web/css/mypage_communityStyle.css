@@ -1,0 +1,85 @@
+section#myPage .myPage_content .myPage_right #myPage_main table {
+	display: inline-block;
+	border-collapse: collapse;
+	font-size: 13px;
+	letter-spacing: -0.3px;
+}
+
+section#myPage .myPage_content .myPage_right #myPage_main table th {
+	border-top: 1px solid #eee;
+	background-color: #eceff2;
+	height: 45px;
+}
+
+section#myPage .myPage_content .myPage_right #myPage_main table td {
+	height: 35px;
+	border-bottom: 1px solid #eee;
+}
+
+section#myPage .myPage_content .myPage_right #myPage_main table td.tableBottom {
+	padding-top: 10px;
+	vertical-align: top;
+	height: 40px;
+}
+
+section#myPage .myPage_content .myPage_right #myPage_main table td.tableBottom button {
+	vertical-align: top;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #fff;
+	border: 1px solid #dfdfdf;
+	border-radius: 0;
+	color: #252525;
+	margin-right: 2px;
+	height: 30px;
+}
+
+section#myPage .myPage_content .myPage_right #myPage_main table td.tableBottom button.current {
+	background-color: #8c9cb5;
+	color: #fff;
+}
+
+section#myPage .myPage_content .myPage_right #myPage_main table td.tableBottom input[type=button] {
+	vertical-align: top;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #fff;
+	border: 1px solid #dfdfdf;
+	border-radius: 0;
+	color: #252525;
+	margin-right: 2px;
+	height: 33px;
+	width: 110px;
+	outline: none;
+}
+
+section#myPage .myPage_content .myPage_right #myPage_main table tr:hover {
+	transition: 400ms;
+	background-color: #eef1f7;
+	border-left: 3px solid #3e4b6c;
+}
+
+section#myPage .myPage_content .myPage_right #myPage_main table tr:nth-child(1) {
+	background-color: #fff;
+	border-left: 3px solid #fff;
+}
+
+section#myPage .myPage_content .myPage_right #myPage_main table tr:nth-last-child(1) {
+	background-color: #fff;
+	border-left: 3px solid #fff;
+}
+
+
+
+
+
+
+
+
+
+
+

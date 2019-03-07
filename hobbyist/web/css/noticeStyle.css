@@ -1,0 +1,1690 @@
+
+#notice {
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    flex-direction: column;
+}
+
+#notice .notice_content {
+    position: relative;
+    width: 990px;
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    flex-direction: column;
+}  
+
+#notice .notice_content .notice_TalBox {
+    width: 880px;
+    margin: 0 10px;
+}
+
+#notice .notice_content .notice_TalBox .notice_Title{
+    margin: 20px 0;
+    text-align: left;
+}
+
+#notice .notice_content .notice_TalBox .notice_Title h3 {
+    margin: 0;
+}
+
+#notice .notice_content .notice_TalBox .notice_Title p {
+    margin: 10px 0;
+}
+
+
+
+/* 테이블 분류 css */
+
+#notice .notice_content .talBox_top>form {
+    width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+}
+
+#notice .notice_content .tal_top {
+	width: 100%;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+#notice .notice_content .tal_top .sort .sortBtn {
+    display: inline-block;
+    cursor: pointer;
+    width: 100px;
+    height: 26px;
+    padding-top: 7px;
+    background:none;
+	color: #424242;
+	background-color: white;
+    border: 1px solid #dadada;
+    outline: none;
+}
+
+#notice .notice_content .tal_top .sort .selected {
+    display: inline-block;
+    cursor: pointer;
+    width: 100px;
+    height: 26px;
+    padding-top: 7px;
+    background-color: #fff;
+    color: #32343a;
+    border-bottom: 2px solid #575b69;
+    outline: none;
+}
+
+#notice .notice_content .tal_top .sort .sortBtn:hover {
+    transition: 500ms;
+    color: white;
+    background-color: #575b69;
+}
+
+#notice .notice_content .tal_top .sort .selected:hover {
+    transition: 500ms;
+    color: white;
+    background-color: #475770;
+}
+
+
+#notice .notice_content .tal_top .sort button img {
+    padding-right: 5px;
+    width: 12px;
+}
+
+#notice .notice_content .tal_top .searchForm {
+    color: #252525;
+    letter-spacing: -0.5px;
+}
+
+#notice .notice_content .tal_top .searchForm input[type=search] {
+    border: 1px solid #dadada;
+    outline: none;
+    height: 30px;
+}
+
+#notice .notice_content .tal_top .searchForm input[type=search]:focus {
+    transition: 500ms;
+    border: 1px solid #252525;
+}
+
+#notice .notice_content .tal_top .searchForm button {
+    vertical-align: bottom;
+    padding-top: 5px;
+    height: 30px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+#notice .notice_content .tal_top .searchForm #ajaxSearch {
+    letter-spacing:-0.5px; 
+    padding-left: 15px;
+    display: none; 
+    width: 204px;
+    position:absolute; 
+    z-index: 5; 
+    background-color: #fff; 
+    border: 1px solid #888888;
+}
+
+#notice .weNoticeColor {
+    background-color: #c8cad1;
+    color: #32343a;
+}
+
+
+/* 테이블 css */
+
+#notice .notice_content .tal_Title{
+    display: table;
+    width: 100%;
+    padding: 10px 0;
+    background-color: white;
+    border-top: 2px solid #575b69;
+    border-bottom: 1px solid #575b69;
+    border-left: 5px solid white;
+    color: black;
+}
+
+#notice .notice_content .tal_ContentBox {
+    position: relative;
+}
+
+#notice .notice_content .tal_Content {
+    display: table;
+    width: 100%;
+    height: 42px;
+    padding: 10px 0;
+    border-left: 3px solid white;    
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+#notice .notice_content .tal_Content:hover {
+    display: table;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #e1e3e9;
+    border-left: 3px solid #575b69;    
+    border-bottom: 1px solid #eee;
+    color: black;
+	cursor: pointer;
+	transition: 400ms;
+}
+
+#notice .notice_content .tal_text {
+    display: table-cell;
+    width: 100%;
+    padding: 5px;
+}
+
+
+#notice .notice_content .talT_noticeNo {
+    display: table-cell;
+    width: 100px;
+    padding: 5px;
+}
+
+#notice .notice_content .talC_noticeNo {
+    display: table-cell;
+    width: 100px;
+    padding: 5px;
+}
+
+#notice .notice_content .talT_noticeSort {
+    display: table-cell;
+    width: 80px;
+    padding: 5px;
+}
+
+#notice .notice_content .talC_noticeSort {
+    display: table-cell;
+    width: 80px;
+    padding: 5px;
+}
+
+#notice .notice_content .talC_noticeSort .nSTextNotice,
+#noticeView .nSTextNotice {
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+    border: 1px solid #eee;
+    padding: 5px 0;
+    border-radius: 10px;
+    color: #3b4f6a;
+    background-color: white;
+}
+
+#notice .notice_content .talC_noticeSort .nSTextEvent,
+#noticeView .nSTextEvent {
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+    border: 1px solid #eee;
+    padding: 5px 0;
+    border-radius: 10px;
+    color: #6a3b4d;
+    background-color: white;
+}
+
+#notice .notice_content .talC_noticeSort .nSTextWriterEnroll,
+#noticeView .nSTextWriterEnroll {
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+    border: 1px solid #eee;
+    padding: 5px 0;
+    border-radius: 10px;
+    color: #3b6a3b;
+    background-color: white;
+}
+
+#notice .notice_content .talT_noticeTitle {
+    display: table-cell;
+    padding: 5px;
+}
+
+#notice .notice_content .talC_noticeTitle {
+    display: table-cell;
+    padding: 5px;
+    text-align: left;
+    text-indent: 20px;
+}
+
+#notice .notice_content .talT_noticeWriter {
+    display: table-cell;
+    width: 100px;
+    padding: 5px;
+}
+
+#notice .notice_content .talC_noticeWriter {
+    display: table-cell;
+    width: 100px;
+    padding: 5px;
+}
+
+#notice .notice_content .talC_noticeWriter>img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    border-radius: 50px;
+}
+
+#notice .notice_content .talT_noticeDate {
+    display: table-cell;
+    width: 100px;
+    padding: 5px;
+}
+
+#notice .notice_content .talC_noticeDate {
+    display: table-cell;
+    width: 100px;
+    padding: 5px;
+}
+
+#notice .notice_content .talT_noticeReadcount {
+    display: table-cell;
+    width: 100px;
+    padding: 5px;
+}
+
+#notice .notice_content .talC_noticeReadcount {
+    display: table-cell;
+    width: 100px;
+    padding: 5px;
+}
+
+
+/* 테이블 footer css 부분 */
+
+#notice .notice_content .notice_TalBox_Footer {
+    position: absolute;
+    right:47px;
+    bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* 페이징처리 css 부분 */
+
+#notice .notice_content .talBox_bottom {
+    display: inline-block;
+    width:100%;
+    height:50px;
+	margin-top: 20px;
+    text-align: center;
+    transition: 400ms;
+    font-size: 13px;
+}
+
+#notice .notice_content .talBox_bottom a, #notice .notice_content .talBox_bottom span {
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+	padding-right: 10px;
+	margin: 0 1px;
+    text-decoration: none;
+	color: black;
+	background-color: white;
+    border: 1px solid #eee;
+    font-size: 14px;
+}
+
+#notice .notice_content .talBox_bottom a:hover, #notice .notice_content .talBox_bottom span:hover {
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+	padding-right: 10px;
+    text-decoration: none;
+	color: black;
+	background-color: #eee;
+	font-size: 14px;
+	transition: 400ms;
+}
+
+
+
+/* noticeWrite css */
+
+#noticeWrite {
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    flex-direction: column;
+}
+
+#noticeWrite .noticeWriteBox {
+    width: 990px;
+    height: 100%;
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    flex-direction: column;
+}
+
+#noticeWrite .noticeWriteBox>form {
+    width: 880px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    flex-direction: column;
+}
+
+
+#noticeWrite .noticeWrite_Mid {
+    width: 90%;
+    height: 100%;
+    padding-top: 63px;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    flex-direction: column;
+}
+
+#noticeWrite .noticeWrite_bottom {
+    width: 90%;
+    height: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: flex-end;
+	align-items: center;
+}
+
+
+#noticeWrite .noticeWriteRow {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#noticeWrite .noticeWriteAttr {
+    width: 20%;
+    letter-spacing: 0.15em;
+    background-color: #eceef2;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#noticeWrite .noticeWriteVal {
+    width: 80%;
+    padding: 0 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+	font-weight: 300;
+	color: #797A9E;
+    display: flex;
+    align-items: center;
+}
+
+#noticeWrite .noticeWriteDate>div {
+    min-height: 50px;
+}
+
+#noticeWrite .noticeWriteSort>div {
+    min-height: 50px;
+}
+
+#noticeWrite .noticeWriteSortNotice>div {
+    display: none;
+    min-height: 0px;
+    transition: 400ms;
+}
+
+#noticeWrite .noticeWriteSortEvent>div {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    min-height: 0px;
+    transition: 400ms;
+}
+
+#noticeWrite .noticeWriteSortEvent>div>div {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+#noticeWrite .noticeWriteSortEvent>div>div>div {
+    margin-right: 10px;
+}
+
+
+#noticeWrite .noticeWriteSortWriterEnroll>div {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    min-height: 0px;
+    transition: 400ms;
+}
+
+#noticeWrite .noticeWriteSortWriterEnroll>div>div {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+#noticeWrite .noticeWriteSortWriterEnroll>div>div>div {
+    margin-right: 10px;
+}
+
+#noticeWrite .noticeWriteTitle>div {
+    min-height: 50px;
+}
+
+#noticeWrite .noticeWriteWriter>div {
+    min-height: 50px;
+}
+
+#noticeWrite .noticeWriteImg>div {
+    min-height: 210px;
+}
+
+#noticeWrite .noticeWriteContent>div {
+    height: 305px;
+}
+
+#noticeWrite .noticeWriteFile>div {
+    position: relative;
+}
+
+#noticeWrite .noticeWriteFile>div {
+    min-height: 50px;
+}
+
+
+#noticeWrite .sortBtn {
+    cursor: pointer;
+    width: 100px;
+    height: 26px;
+    margin-left: 10px;
+    padding-top: 5px;
+    background:none;
+    color: #32343a;
+    letter-spacing: 0.15em;
+	background-color: white;
+    border: 1px solid #9fa3b1;
+    border-radius: 10px;
+    outline: none;
+}
+
+#noticeWrite .sortBtn:hover {
+    transition: 500ms;
+    color: white;
+    background-color: #575b69;
+}
+
+#noticeWrite .sortBtn1 {
+    cursor: pointer;
+    width: 100px;
+    height: 26px;
+    margin-left: 10px;
+    padding-top: 5px;
+    background:none;
+    color: white;
+    letter-spacing: 0.15em;
+	background-color: #575b69;
+    border: 1px solid #9fa3b1;
+    border-radius: 10px;
+    outline: none;
+}
+
+#noticeWrite .sortBtn1:hover {
+    transition: 500ms;
+    color: #32343a;
+    background-color: white;
+}
+
+
+#noticeWrite .inputText {
+	width: 100%;
+	border: 0;
+	font-size: 14px;
+	font-weight: 300;
+	color: #797A9E;
+    outline: none;
+}
+
+
+
+#noticeWrite input.upload_text {/*읽기전용 인풋텍스트*/
+	float:left;
+	width:230px;/* 버튼 포함 전체 가로 길이*/
+	height:30px;
+	line-height:30px;
+	padding:0 3px;
+    border:1px solid white;
+    outline: none;
+}
+
+#noticeWrite div.upload-btn_wrap input.input_file {/*파일찾기 폼 투명하게*/
+	position:absolute;
+	top:0;
+	right:0;
+	cursor:pointer;
+	opacity:0;
+	filter:alpha(opacity=0);
+	-ms-filter:"alpha(opacity=0)";
+	-moz-opacity:0;
+}
+#noticeWrite div.upload-btn_wrap {/*버튼테두리 감싼 div*/
+	overflow:hidden;
+	position:relative;
+	float:left;
+	width:70px;/*width, height 값은 button(찾아보기)값과 같아야함 */
+	height:30px;
+	padding-left:3px;
+}
+#noticeWrite div.upload-btn_wrap button {/*버튼 div*/
+	width:70px;
+	height:30px;
+	font-weight:bold;
+	background:#475770;
+	border:1px solid #475770;
+	color:#fff;
+}
+
+#noticeWrite div.upload-btn_wrap:hover button {/*버튼 div*/
+	width:70px;
+	height:30px;
+	font-weight:bold;
+	background:#fff;
+	border:1px solid #9fa3b1;
+	color:#32343a;
+}
+
+
+#noticeWrite .inputImageBox {
+    position: relative;
+    width: 615px;
+    height: 250px;
+}
+
+#noticeWrite .inputImageBox .inputImageback {
+	position: relative;
+	width:100%;
+	height:250px;
+	border: 1px solid #C3C3D8;
+	background-color: #C3C3D8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 5px;
+}
+
+#noticeWrite .inputImageBox .inputImageFile {
+	position: absolute;
+	width:100%;
+	height:100%;
+	opacity: 0;
+}
+
+#noticeWrite .inputImageBox .inputImage {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#noticeWrite .inputImageBox .inputImage img {
+	width:100px;
+	height:100px;
+	border-radius: 5px;
+}
+
+#noticeWrite .inputImageBox .wEnrollPreMemberImageBox img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+#noticeWrite #cke_noticeContent_editor {
+    width: 100%;
+}
+
+#noticeWrite .cke_resizer, #noticeWrite .cke_path {
+    display: none;
+}
+#noticeWrite .cke_bottom {
+    height: 18px;
+}
+
+
+
+#notice .button1,
+#noticeWrite .button1,
+#noticeView .button1 {
+	margin: 5px;
+	width: 100px;
+	height: 30px;
+	letter-spacing: 0.15em;
+	border: 1px solid #9fa3b1;
+	color: white;
+	background-color: #575b69;
+	outline: none;
+	transition: 500ms;
+	cursor: pointer;
+}
+
+#notice .button1:hover,
+#noticeWrite .button1:hover,
+#noticeView .button1:hover {
+    color: #32343a;
+    border: 1px solid #9fa3b1;
+	background-color: white;
+	outline: none;
+	transition: 500ms;
+}
+
+
+
+#noticeWrite .noticeWrite_top {
+    width: 880px;
+    position: fixed;
+    height: 50px;
+    color: rgb(39, 39, 39);
+    padding-left: 20px;
+    text-align: left;
+    border: 1px solid #c7cacf;
+    background-color: #fff;
+    font-size: 14px;
+    transition: 500ms;
+    top: 180px;
+    z-index: 5;
+}
+
+#noticeWrite .noticeWrite_top ul {
+    margin: 0;
+    padding: 0;
+    padding-top: 13px;
+    list-style-type: none;
+}
+
+#noticeWrite .noticeWrite_top ul li {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-left: 1px solid #e7e7e7;
+    height: 100%;
+}
+
+#noticeWrite .noticeWrite_top ul li:nth-child(1) {
+    border: none;
+} 
+
+#noticeWrite .noticeWrite_top ul li:hover {
+    transition: 400ms;
+}
+
+
+/* date css */
+
+/* Removes the clear button from date inputs */
+#noticeWrite input[type="date"]::-webkit-clear-button {
+    display: none;
+    outline: none;
+}
+
+/* Removes the spin button */
+#noticeWrite input[type="date"]::-webkit-inner-spin-button { 
+    display: none;
+    outline: none;
+}
+
+/* Always display the drop down caret */
+#noticeWrite input[type="date"]::-webkit-calendar-picker-indicator {
+    color: #475770;
+    outline: none;
+}
+
+/* A few custom styles for date inputs */
+#noticeWrite input[type="date"] {
+    appearance: none;
+    -webkit-appearance: none;
+    color: #95a5a6;
+    font-family: "Helvetica", arial, sans-serif;
+    border:1px solid #eee;
+    background: white;
+    padding:5px;
+    display: inline-block !important;
+    visibility: visible !important;
+    outline: none;
+}
+
+#noticeWrite input[type="date"], focus {
+    color: #95a5a6;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    outline: none;
+}
+
+#noticeWrite .fileImgDelBtn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0px;
+    right: 0px;
+    font-size: 18px;
+    font-weight: 700;
+	background-color: #575b69;
+	border-radius: 10px;
+	color: white;
+	border: none;
+	outline: none;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#noticeWrite .fileImgDelBtn:hover {
+    transition: 400ms;
+    color: #32343a;
+    border: 1px solid #9fa3b1;
+	background-color: white;
+}
+
+#noticeWrite .fileDelBtn {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 12px;
+    right: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #9fa3b1;
+    color: black;
+    outline: none;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#noticeWrite .fileDelBtn:hover {
+    transition: 400ms;
+    color: white;
+	background-color: #575b69;
+}
+
+/* input number css */
+
+.quantity {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button
+  {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  input[type=number]
+  {
+    -moz-appearance: textfield;
+  }
+  
+  .quantity input {
+    width: 97px;
+    height: 32px;
+    line-height: 1.65;
+    float: left;
+    display: block;
+    padding: 0;
+    margin: 0;
+    padding-left: 20px;
+    border: 1px solid #eee;
+  }
+  
+  .quantity input:focus {
+    outline: 0;
+  }
+  
+  .quantity-nav {
+    float: left;
+    position: relative;
+    height: 42px;
+  }
+  
+  .quantity-button {
+    position: relative;
+    cursor: pointer;
+    border-left: 1px solid #eee;
+    width: 20px;
+    text-align: center;
+    color: #333;
+    font-size: 13px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+    line-height: 1.7;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+  }
+  
+  .quantity-button.quantity-up {
+    position: absolute;
+    width: 30px;
+    height: 34px;
+    top: 4px;
+    right: 0;
+    font-size: 20px;
+    border-left: 1px solid #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .quantity-button.quantity-down {
+    position: absolute;
+    width: 30px;
+    height: 34px;
+    top: 4px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+
+/* noticeView css 설정 */
+
+
+#noticeView {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    flex-direction: column;
+}
+
+#noticeView .noticeView_content {
+    width: 990px;
+    height: 100%;
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    flex-direction: column;
+}
+
+#noticeView .noticeView_contentBox {
+    width: 880px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    flex-direction: column;
+}
+
+#noticeView .contentBox_top {
+    width: 880px;
+    position: fixed;
+    height: 50px;
+    color: rgb(39, 39, 39);
+    padding-left: 20px;
+    text-align: left;
+    border: 1px solid #c7cacf;
+    background-color: #fff;
+    font-size: 14px;
+    transition: 500ms;
+    top: 180px;
+    z-index: 5;
+}
+
+#noticeView .contentBox_top ul {
+    margin: 0;
+    padding: 0;
+    padding-top: 13px;
+    list-style-type: none;
+}
+
+#noticeView .contentBox_top ul li {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-left: 1px solid #e7e7e7;
+    height: 100%;
+}
+
+#noticeView .contentBox_top ul li:nth-child(1) {
+    border: none;
+} 
+
+#noticeView .contentBox_top ul li:hover {
+    transition: 400ms;
+}
+
+#noticeView .contentBox_mid {
+    width: 90%;
+    height: 100%;
+    padding-top: 63px;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    flex-direction: column;
+}
+
+#noticeView .noticeViewTitleBox {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#noticeView .weNoticeView {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    background-color: #c8cad1;
+    color:#5b5b5b;
+    display: flex;
+    align-items: center;
+}
+
+#noticeView .noticeViewTitle {
+    font-size: 20px;
+    text-indent: 10px;
+}
+
+#noticeView .weNoticeViewText {
+    font-size: 16px;
+    text-indent: 10px;
+    display: flex;
+    
+}
+
+#noticeView .weNoticeViewTextS {
+    font-size: 16px;
+    text-align: center;
+    width: 120px;
+    height: 30px;
+    padding-right: 10px;
+    background-color: #eee;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#noticeView .weNoticeViewTextE {
+    font-size: 16px;
+    text-align: center;
+    width: 120px;
+    height: 30px;
+    padding-right: 10px;
+    background-color: #eee;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#noticeView .writerEnrollBtn {
+    margin: 5px;
+    width: 120px;
+    height: 30px;
+    letter-spacing: 0.15em;
+    border: 1px solid #475770;
+    color: white;
+    background-color: #575b69;
+    outline: none;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+#noticeView .writerEnrollBtn:hover {
+    color: #32343a;
+    border: 1px solid #9fa3b1;
+    background-color: white;
+    outline: none;
+    transition: 500ms;
+}
+#noticeView .noticeViewInforBox {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    background-color: #e1e3e9;
+    color:#5b5b5b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#noticeView .noticeViewWriter {
+    margin: 0 10px;
+}
+
+#noticeView .noticeViewWriter img {
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+}
+
+#noticeView .noticeViewInforBoxRight {
+    display: flex;
+    margin: 0 10px;
+}
+
+#noticeView .noticeViewInforBoxRight div {
+    margin-left: 10px;
+}
+
+#noticeView .noticeViewImg img {
+    width: 600px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+#noticeView .noticeViewImgBox {
+    margin: 10px 0;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#noticeView .noticeViewImgBox .noticeViewImgName {
+    width: 100%;
+}
+
+#noticeView .noticeViewContent {
+    width: 95%;
+    text-align: left;
+}
+
+#noticeView .noticeViewFileBox {
+    width: 100%;
+    padding-top: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #eee;
+    
+}
+
+#noticeView .noticeViewFileBox div {
+    margin: 0 10px;    
+}
+
+#noticeView .noticeViewFileBox .noticeViewFileTitle {
+    padding: 5px 10px;
+    background-color: #e1e3e9;
+    border-radius: 5px;
+}
+
+#noticeView .noticeViewFileBox .noticeViewFile {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#noticeView .contentBox_bottom {
+    width: 90%;
+    height: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#notice .noticeListDel {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    bottom: 15px;
+    right: -40px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #575b69;
+	border-radius: 10px;
+	color: white;
+	border: none;
+	outline: none;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#notice .noticeListDel:hover {
+    transition: 400ms;
+    color: #32343a;
+    background-color: white;
+    border: 1px solid #9fa3b1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* noticeModify css */
+
+#noticeModify {
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    flex-direction: column;
+}
+
+#noticeModify .noticeWriteBox {
+    width: 990px;
+    height: 100%;
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    flex-direction: column;
+}
+
+#noticeModify .noticeWriteBox>form {
+    width: 880px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    flex-direction: column;
+}
+
+
+#noticeModify .noticeWrite_Mid {
+    width: 90%;
+    height: 100%;
+    padding-top: 63px;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    flex-direction: column;
+}
+
+#noticeModify .noticeWrite_bottom {
+    width: 90%;
+    height: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: flex-end;
+	align-items: center;
+}
+
+
+#noticeModify .noticeWriteRow {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#noticeModify .noticeWriteAttr {
+    width: 20%;
+    letter-spacing: 0.15em;
+    background-color: #eceef2;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#noticeModify .noticeWriteVal {
+    width: 80%;
+    padding: 0 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+	font-weight: 300;
+	color: #797A9E;
+    display: flex;
+    align-items: center;
+}
+
+
+#noticeModify .noticeWriteDate>div {
+    min-height: 50px;
+}
+
+#noticeModify .noticeWriteSort>div {
+    min-height: 50px;
+}
+
+#noticeModify .noticeWriteSortNotice>div {
+    display: none;
+    min-height: 0px;
+    transition: 400ms;
+}
+
+#noticeModify .noticeWriteSortEvent>div {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    min-height: 0px;
+    transition: 400ms;
+}
+
+#noticeModify .noticeWriteSortEvent>div>div {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+#noticeModify .noticeWriteSortEvent>div>div>div {
+    margin-right: 10px;
+}
+#noticeModify .noticeWriteSortWriterEnroll>div {
+    display: none;
+    min-height: 0px;
+    transition: 400ms;
+}
+
+#noticeModify .noticeWriteSortWriterEnroll>div>div {
+    margin-right: 10px;
+}
+
+#noticeModify .noticeWriteTitle>div {
+    min-height: 50px;
+}
+
+#noticeModify .noticeWriteWriter>div {
+    min-height: 50px;
+}
+
+#noticeModify .noticeWriteImg>div {
+    min-height: 210px;
+}
+
+#noticeModify .noticeWriteContent>div {
+    height: 305px;
+}
+
+#noticeModify .noticeWriteFile {
+    position: relative;
+}
+
+#noticeModify .noticeWriteFile>div {
+    min-height: 50px;
+}
+
+
+#noticeModify .sortBtn {
+    cursor: pointer;
+    width: 100px;
+    height: 26px;
+    margin-left: 10px;
+    padding-top: 5px;
+    background:none;
+    color: #424242;
+    letter-spacing: 0.15em;
+	background-color: white;
+    border: 1px solid #dadada;
+    border-radius: 10px;
+    outline: none;
+}
+
+#noticeModify .sortBtn:hover {
+    transition: 500ms;
+    color: white;
+    background-color: rgba(71, 87, 112, 0.8);
+}
+
+#noticeModify .sortBtn1 {
+    cursor: pointer;
+    width: 100px;
+    height: 26px;
+    margin-left: 10px;
+    padding-top: 5px;
+    background:none;
+    color: white;
+    letter-spacing: 0.15em;
+	background-color: #475770;
+    border: 1px solid #dadada;
+    border-radius: 10px;
+    outline: none;
+}
+
+#noticeModify .sortBtn1:hover {
+    transition: 500ms;
+    color: #424242;
+    background-color: white;
+}
+
+
+#noticeModify .inputText {
+	width: 100%;
+	border: 0;
+	font-size: 14px;
+	font-weight: 300;
+	color: #797A9E;
+    outline: none;
+}
+
+
+
+#noticeModify input.upload_text {/*읽기전용 인풋텍스트*/
+	float:left;
+	width:230px;/* 버튼 포함 전체 가로 길이*/
+	height:30px;
+	line-height:30px;
+	padding:0 3px;
+    border:1px solid white;
+    outline: none;
+}
+
+#noticeModify div.upload-btn_wrap input.input_file {/*파일찾기 폼 투명하게*/
+	position:absolute;
+	top:0;
+	right:0;
+	cursor:pointer;
+	opacity:0;
+	filter:alpha(opacity=0);
+	-ms-filter:"alpha(opacity=0)";
+	-moz-opacity:0;
+}
+#noticeModify div.upload-btn_wrap {/*버튼테두리 감싼 div*/
+	overflow:hidden;
+	position:relative;
+	float:left;
+	width:70px;/*width, height 값은 button(찾아보기)값과 같아야함 */
+	height:30px;
+	padding-left:3px;
+}
+#noticeModify div.upload-btn_wrap button {/*버튼 div*/
+	width:70px;
+	height:30px;
+	font-weight:bold;
+	background:#475770;
+	border:1px solid #475770;
+	color:#fff;
+}
+
+#noticeModify div.upload-btn_wrap:hover button {/*버튼 div*/
+	width:70px;
+	height:30px;
+	font-weight:bold;
+	background:#fff;
+	border:1px solid #475770;
+	color:black;
+}
+
+
+#noticeModify .inputImageBox {
+    position: relative;
+    width: 600px;
+    height: 250px;
+}
+
+#noticeModify .inputImageBox .inputImageback {
+	position: relative;
+	width:100%;
+	height:250px;
+	border: 1px solid #C3C3D8;
+	background-color: #C3C3D8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 5px;
+}
+
+#noticeModify .inputImageBox .inputImageFile {
+	position: absolute;
+	width:100%;
+	height:100%;
+	opacity: 0;
+}
+
+#noticeModify .inputImageBox .inputImage {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#noticeModify .inputImageBox .inputImage img {
+	border-radius: 5px;
+}
+
+#noticeModify .inputImageBox .wEnrollPreMemberImageBox img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+#noticeModify #cke_noticeContent_editor {
+    width: 100%;
+}
+
+#noticeModify .cke_resizer, #noticeModify .cke_path {
+    display: none;
+}
+#noticeModify .cke_bottom {
+    height: 18px;
+}
+
+
+#noticeModify .button1 {
+	margin: 5px;
+	width: 100px;
+	height: 30px;
+	letter-spacing: 0.15em;
+	border: 1px solid #475770;
+	color: white;
+	background-color: #475770;
+	outline: none;
+	transition: 500ms;
+	cursor: pointer;
+}
+
+#noticeModify .button1:hover {
+    color: black;
+    border: 1px solid #475770;
+	background-color: white;
+	outline: none;
+	transition: 500ms;
+}
+
+
+
+#noticeModify .noticeWrite_top {
+    width: 880px;
+    position: fixed;
+    height: 50px;
+    color: rgb(39, 39, 39);
+    padding-left: 20px;
+    text-align: left;
+    border: 1px solid #c7cacf;
+    background-color: #fff;
+    font-size: 14px;
+    transition: 500ms;
+    top: 213px;
+    z-index: 5;
+}
+
+#noticeModify .noticeWrite_top ul {
+    margin: 0;
+    padding: 0;
+    padding-top: 13px;
+    list-style-type: none;
+}
+
+#noticeModify .noticeWrite_top ul li {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-left: 1px solid #e7e7e7;
+    height: 100%;
+}
+
+#noticeModify .noticeWrite_top ul li:nth-child(1) {
+    border: none;
+} 
+
+#noticeModify .noticeWrite_top ul li:hover {
+    transition: 400ms;
+}
+
+
+/* date css */
+
+/* Removes the clear button from date inputs */
+#noticeModify input[type="date"]::-webkit-clear-button {
+    display: none;
+    outline: none;
+}
+
+/* Removes the spin button */
+#noticeModify input[type="date"]::-webkit-inner-spin-button { 
+    display: none;
+    outline: none;
+}
+
+/* Always display the drop down caret */
+#noticeModify input[type="date"]::-webkit-calendar-picker-indicator {
+    color: #475770;
+    outline: none;
+}
+
+/* A few custom styles for date inputs */
+#noticeModify input[type="date"] {
+    appearance: none;
+    -webkit-appearance: none;
+    color: #95a5a6;
+    font-family: "Helvetica", arial, sans-serif;
+    border:1px solid #eee;
+    background: white;
+    padding:5px;
+    display: inline-block !important;
+    visibility: visible !important;
+    outline: none;
+}
+
+#noticeModify input[type="date"], focus {
+    color: #95a5a6;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    outline: none;
+}
+
+
+
+#noticeModify .fileImgDelBtn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0px;
+    right: 0px;
+    font-size: 16px;
+    font-weight: 700;
+	background-color: rgb(199, 136, 136);
+	border-radius: 10px;
+	color: white;
+	border: none;
+	outline: none;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#noticeModify .fileImgDelBtn:hover {
+    transition: 400ms;
+    color: black;
+    border: 1px solid #475770;
+	background-color: white;
+}
+
+#noticeModify .fileDelBtn {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 12px;
+    right: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #475770;
+    color: black;
+    outline: none;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#noticeModify .fileDelBtn:hover {
+    transition: 400ms;
+    color: white;
+	background-color: #475770;
+}

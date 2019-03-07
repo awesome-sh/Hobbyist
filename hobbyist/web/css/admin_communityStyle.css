@@ -1,0 +1,570 @@
+/* -------------------------community common----------------------------- */
+section#admin .admin_content .admin_right input {
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 20px;
+	border: 1px solid #ddd;
+	outline: none;
+}
+
+section#admin .admin_content .admin_right #admin_main table td {
+	height: 35px;
+	border-bottom: 1px solid #dedede;
+}
+
+section#admin .admin_content .admin_right #admin_main table td.tableBottom {
+	padding-top: 10px;
+	vertical-align: top;
+	height: 40px;
+}
+
+/* -------------------------community List----------------------------- */
+
+section#admin .admin_content #admin_right {
+	margin-left: 170px;
+    margin-top: 50px;
+}
+
+section#admin .admin_content #admin_right .admin_main {
+	height: 40px;
+}
+
+section#admin .admin_content #admin_right .admin_main .sort {
+    float: left;
+    padding-top: 5px;
+    padding-left: 15px;
+}
+
+section#admin .admin_content #admin_right .admin_main .sort div {
+	line-height: 30px;
+	text-align: center;
+	cursor: pointer;
+    border: none;
+    font-size: 12px;
+    width: 100px;
+    height: 33px;
+    padding-top: 5px;
+    margin-right: 2px;
+    background: none;
+    border: 1px solid #cacaca;
+    float: left;
+    transition: 500ms;
+}
+
+section#admin .admin_content #admin_right .admin_main .sort div:hover {
+	border: 1px solid #575b69;
+    background-color: #575b69;
+    color: #fff;
+    transition: 500ms;
+}
+
+section#admin .admin_content #admin_right .admin_main .keyword {
+    line-height: 30px;
+    color: #252525;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+}
+
+section#admin .admin_content #admin_right .admin_main .keyword {
+    float:right;
+    margin-top: 10px;
+}
+
+section#admin .admin_content #admin_right .admin_main .keyword input[type=search] {
+    vertical-align: bottom;
+    border: 1px solid #dadada;
+    outline: none;
+    height: 30px;
+}
+
+section#admin .admin_content #admin_right .admin_main .keyword input[type=search]:focus {
+    transition: 500ms;
+    border: 1px solid #252525;
+}
+
+section#admin .admin_content #admin_right .admin_main .keyword button {
+    vertical-align: bottom;
+    padding-top: 5px;
+    height: 30px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+section#admin .admin_content #admin_right .admin_middle {
+	width: 930px;
+	text-align: center;
+	overflow: hidden;
+}
+
+section#admin .admin_content #admin_right .admin_middle  a {
+	font-size: 13px;
+}
+
+section#admin .admin_content #admin_right .admin_middle input {
+	border: 1px solid #dfdfdf;
+	width: 60px;
+}
+
+section#admin .admin_content #admin_right .admin_middle  a:hover {
+	text-decoration: underline;
+}
+
+section#admin .admin_content #admin_right .admin_middle table {
+	display: inline-block;
+	border-collapse: collapse;
+	font-size: 13px;
+	letter-spacing: -0.3px;
+	text-align: center;
+}
+
+section#admin .admin_content #admin_right .admin_middle table th {
+	border-top: 2px solid #575b69;
+	background-color: #ffffff;
+	height: 45px;
+}
+
+section#admin .admin_content #admin_right .admin_middle table td {
+	height: 40px;
+	border-bottom: 1px solid #eee;
+}
+
+section#admin .admin_content #admin_right .admin_middle table td.tableBottom {
+	padding-top: 10px;
+	vertical-align: top;
+	height: 40px;
+}
+
+section#admin .admin_content #admin_right .admin_middle table td.tableBottom button {
+	vertical-align: top;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #fff;
+	border: 1px solid #dfdfdf;
+	border-radius: 0;
+	color: #252525;
+	margin-right: 2px;
+	height: 30px;
+}
+
+section#admin .admin_content #admin_right .admin_middle table td.tableBottom button.current {
+	background-color: #575b69;
+	padding-left:15px;
+	padding-right:15px;
+	color: #fff;
+}
+
+section#admin .admin_content #admin_right .admin_middle table td.tableBottom input[type=button] {
+	vertical-align: top;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #fff;
+	border: 1px solid #dfdfdf;
+	border-radius: 0;
+	color: #252525;
+	margin-right: 2px;
+	height: 33px;
+	width: 110px;
+	outline: none;
+}
+
+section#admin .admin_content #admin_right .admin_middle table td.tableBottom input[type=button]:hover {
+	transition: 400ms;
+	background-color: #475770;
+	color: #fff;
+}
+
+section#admin .admin_content #admin_right .admin_middle table tr:hover {
+	transition: 400ms;
+	background-color: #eef1f7;
+	border-left: 3px solid #3e4b6c;
+}
+
+section#admin .admin_content #admin_right .admin_middle table tr:nth-child(1) {
+	background-color: #fff;
+	border-left: 3px solid #fff;
+}
+
+section#admin .admin_content #admin_right .admin_middle table tr:nth-last-child(1) {
+	background-color: #fff;
+	border-left: 3px solid #fff;
+}
+
+section#admin .admin_content #admin_right .admin_middle table span.comment {
+	margin: 0;
+	padding: 0;
+	color: #7286a5;
+}
+
+section#admin .admin_content #admin_right .admin_middle table button {
+	background-color: #b0bbcc;
+	border-radius: 3px;
+	color: #fff;
+	border: none;
+	outline: none;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+section#admin .admin_content #admin_right .admin_middle table button:hover {
+	transition: 300ms;
+	background: #3e4b6c;
+}
+
+section#admin .admin_content #admin_right .admin_middle {margin-top:20px; text-align: center; width: 830px;}
+
+section#admin .admin_content #admin_right .admin_middle a {
+	text-decoration: none;
+	color: black;
+	margin: 0 10px;
+}
+
+
+/* -------------------------community revise----------------------------- */
+
+section#admin .admin_content .admin_right #admin_main form table#tbl_revise th {
+	border:none;
+}
+
+section#admin .admin_content .admin_right #admin_main form table#tbl_revise tr:nth-child(1) td input {
+	width: 665px;
+	height: 24px;
+	font-size: 13px;
+}
+section#admin .admin_content .admin_right #admin_main form table#tbl_revise tr:nth-child(2) td input {
+	width: 80px;
+}
+section#admin .admin_content .admin_right #admin_main form table#tbl_revise tr:last-of-type td input {
+	float: right;
+}
+
+section#admin .admin_content .admin_right #admin_main table#tbl_revise tr td input.inp {
+	outline: none;
+	float: left;
+	width: 120px;
+	height: 40px;
+	background-color: #575b69;
+	color: white;
+	font-size: 14px;
+	padding-left: 5px;
+	transition: 500ms;
+}
+
+section#admin .admin_content .admin_right #admin_main table#tbl_revise tr td input.inp:hover {
+	background-color: #3d4049;
+    color: #f0f0f0;
+    transition: 500ms;
+}
+
+
+/* -------------------------community FAQList----------------------------- */
+
+section#admin .admin_content #admin_right .admin_main .FAQsearchForm {
+    color: #252525;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+    border: 1px solid #c3c3c3;
+    width: 610px;
+    height: 60px;
+    padding-top: 30px;
+    padding-left: 200px;
+    margin-top: 20px;
+}
+
+section#admin .admin_content #admin_right .FAQsearchForm #searchType {
+    width: 100px;
+    font-size: 13px;
+    outline: none;
+    padding: 5px;
+    float: left;
+    margin-right: 5px;
+}
+
+section#admin .admin_content #admin_right .FAQsearchForm input[type=search] {
+    border: 1px solid #dadada;
+    float: left;
+    outline: none;
+    height: 30px;
+}
+
+section#admin .admin_content #admin_right .FAQsearchForm img {
+    float: left;
+    margin-right: 10px;
+}
+
+section#admin .admin_content #admin_right .FAQsearchForm input[type=search]:focus {
+    transition: 500ms;
+    border: 1px solid #252525;
+}
+
+section#admin .admin_content #admin_right .FAQsearchForm button {
+	float: left;
+    vertical-align: bottom;
+    padding-top: 5px;
+    height: 30px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+section#admin .admin_content #admin_right .admin_main .faq_sort {
+    padding-top: 5px;
+    padding-left: 15px;
+}
+
+section#admin .admin_content #admin_right .admin_main .faq_sort div {
+	line-height: 30px;
+	text-align: center;
+	cursor: pointer;
+    border: none;
+    font-size: 12px;
+    width: 68px;
+    height: 30px;
+    margin-right: 2px;
+    background: none;
+    border: 1px solid #cacaca;
+    float: left;
+    transition: 500ms;
+}
+
+section#admin .admin_content #admin_right .admin_main .faq_sort div:hover {
+	border: 1px solid #575b69;
+    background-color: #575b69;
+    color: #fff;
+    transition: 500ms;
+}
+
+section#admin .admin_content #admin_right .admin_main .sort div:hover {
+	border: 1px solid #575b69;
+    background-color: #575b69;
+    color: #fff;
+    transition: 500ms;
+}
+
+section#admin .admin_content #admin_right div.admin_FAQ_bottom span {margin: 0 10px;}
+
+section#admin div#admin_right div.admin_FAQ_bottom input[type=button] {
+    border: none;
+    font-size: 12px;
+    width: 60px;
+    height: 25px;
+    background: none;
+    border: 1px solid #cacaca;
+    float: right;
+}
+
+section#admin div#admin_right div.admin_FAQ_bottom input[type=button]:hover {
+    border: 1px solid #575b69;
+    background-color: #575b69;
+    color: #fff;
+    transition: 500ms;
+}
+
+section#admin .admin_content #admin_right .admin_FAQmiddle table {
+	display: inline-block;
+	border-collapse: collapse;
+	font-size: 13px;
+	letter-spacing: -0.3px;
+}
+
+section#admin .admin_content #admin_right .admin_FAQmiddle table td {
+	height: 35px;
+	border-bottom: 1px solid #eee;
+}
+
+section#admin .admin_content #admin_right .admin_FAQmiddle table tr td:nth-child(1) {
+	width: 200px;
+}
+
+section#admin .admin_content #admin_right .admin_FAQmiddle table tr td:nth-child(2) {
+	width: 600px;
+}
+
+section#admin .admin_content #admin_right .admin_FAQmiddle table td.tableBottom {
+	padding-top: 10px;
+	vertical-align: top;
+	height: 40px;
+}
+
+section#admin .admin_content #admin_right .admin_FAQmiddle table td.tableBottom button {
+	vertical-align: top;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #fff;
+	border: 1px solid #dfdfdf;
+	border-radius: 0;
+	color: #252525;
+	margin-right: 2px;
+	height: 30px;
+}
+
+section#admin .admin_content #admin_right .admin_FAQmiddle table td.tableBottom button.current {
+	background-color: #575b69;
+	padding-left:10px;
+	padding-right: 10px;
+	color: #fff;
+}
+
+section#admin .admin_content #admin_right .admin_FAQmiddle table td.tableBottom input[type=button] {
+	vertical-align: top;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #fff;
+	border: 1px solid #dfdfdf;
+	border-radius: 0;
+	color: #252525;
+	margin-right: 2px;
+	height: 33px;
+	width: 110px;
+	outline: none;
+}
+
+section#admin .admin_content #admin_right .admin_FAQmiddle table td.tableBottom input[type=button]:hover {
+	transition: 400ms;
+	background-color: #575b69;
+	color: #fff;
+}
+
+section#admin .admin_content #admin_right .admin_FAQmiddle table tr:hover {
+	transition: 400ms;
+	background-color: #eef1f7;
+	border-left: 3px solid #575b69;
+}
+
+section#admin .admin_content #admin_right .admin_FAQmiddle table tr:nth-child(1) {
+	background-color: #fff;
+	border-left: 3px solid #fff;
+}
+
+section#admin .admin_content #admin_right .admin_FAQmiddle table tr:nth-last-child(1) {
+	background-color: #fff;
+	border-left: 3px solid #fff;
+}
+
+section#admin .admin_content #admin_right .admin_FAQmiddle table button {
+	background-color: #b0bbcc;
+	border-radius: 3px;
+	color: #fff;
+	border: none;
+	outline: none;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+section#admin .admin_content #admin_right .admin_FAQmiddle table button:hover {
+	transition: 300ms;
+	background: #575b69;
+}
+
+section#admin .admin_content #admin_right .admin_FAQmiddle {margin-left: 10px; margin-top:20px; width: 820px; float: left;}
+
+section#admin .admin_content #admin_right .admin_FAQmiddle a {
+	text-decoration: none;
+	color: black;
+	margin: 0 10px;
+}
+
+
+/* -------------------------community FAQView----------------------------- */
+
+section#admin .admin_content .admin_FAQright {
+	padding-top: 20px;
+	margin-left: 180px;
+}
+
+section#admin .admin_content #admin_right .FAQView_top{
+	padding: 5px;
+	text-align: left;
+	font-size: 23px;
+}
+
+section#admin .admin_content #admin_right #info_head {
+	text-align: right;
+	background-color: white;
+	font-size: 16px;
+	padding: 8px;
+}
+
+section#admin .admin_content #admin_right #FAQview_content {
+	font-size: 14px;
+	text-align: center;
+	padding: 20px 100px;
+	line-height: 30px;
+}
+
+section#admin .admin_content #admin_right #FAQview_bottom {
+	float: right;
+}
+
+section#admin .admin_content #admin_right #FAQview_bottom button {
+	width: 120px;
+	height: 40px;
+	background-color: #b0bbcc;
+	border-radius: 3px;
+	color: #fff;
+	border: none;
+	outline: none;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	transition: 300ms;
+}
+
+section#admin .admin_content #admin_right #FAQview_bottom button:hover {
+	transition: 300ms;
+	background: #575b69;
+}
+
+
+/* -------------------------community FAQInsert----------------------------- */
+
+
+section#admin .admin_content #admin_right .admin_main form table#tbl_FAQRevise tr:nth-child(1) td input {
+	width: 665px;
+	height: 24px;
+	font-size: 13px;
+}
+section#admin .admin_content #admin_right .admin_main form table#tbl_FAQRevise tr:nth-child(2) td input {width: 80px;}
+section#admin .admin_content #admin_right .admin_main form table#tbl_FAQRevise tr:last-of-type td input {float: right;}
+
+
+section#admin .admin_content #admin_right .admin_main table#tbl_FAQRevise tr td input.inp {
+	outline: none;
+    float: left;
+    padding-left: 5px;
+	height: 50px;
+	background-color: #575b69;
+	color: white;
+	font-size: 13px;
+	border-radius: 7px;
+	transition: 500ms;
+}
+
+section#admin .admin_content #admin_right .admin_main table#tbl_FAQRevise tr td input.inp:hover {
+	background-color: #575b69;
+    color: #fff;
+    transition: 500ms;
+}
+
+section#admin .admin_content #admin_right .admin_main table#tbl_FAQRevise tr td input.inptitle {
+	outline: none;
+    float: left;
+	font-size: 20px;
+}
+
+section#admin .admin_content #admin_right .admin_main table#tbl_FAQRevise tr td select {
+	outline: none;
+	float: left;
+	width: 120px;
+	height: 30px;
+	margin: 4px, 0;
+}
+
+

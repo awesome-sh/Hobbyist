@@ -1,0 +1,2067 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    letter-spacing: -0.4px;
+    scroll-behavior: smooth;
+    position: relative;
+    line-height: 21px;
+    color: #515359;
+}
+
+::selection {
+    background-color: #515359;
+    color: #fff;
+}
+
+.blur {
+    display: none;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #515359e0;
+}
+
+header {
+    z-index: 9000;
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    text-align: center;
+}
+
+
+header #header-top {
+    width: 990px;
+    text-align: center;
+    display: inline-block;
+    
+}
+
+header #header-top .left-top {
+    display: inline-block;
+    float: left;
+    margin: 0;
+    padding-top: 12px;
+    padding-left: 15px;
+}
+
+header #header-top .left-top a {
+    text-decoration: none;
+    color: #515359;
+    font-size:13px;
+    letter-spacing: -0.3px;
+}
+
+header #header-top .left-top a:hover {
+    transition: 500ms;
+    color: #515359b9;
+}
+
+header #header-top .left-top a #line {
+    width: 0;
+    height: 1px;
+    background-color: #d0d1c0;
+    transition: 500ms;
+}
+
+header #header-top .left-top a:hover #line {
+  	transition: 500ms;
+    width: 100%;
+}
+
+header #header-top .top {
+	float: right;
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: -0.3px;
+}
+
+header #header-top .top ul {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    list-style: none;
+    text-align: right;
+}
+
+header #header-top .top ul li {
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    margin-left: 3px;
+    border: 1px solid #e1e3e9;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: #515359;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+}
+
+header #header-top .top ul li#admin {
+	padding-left: 15px;
+	padding-right: 15px;
+	background-color: #575b69;
+	color: #fff;
+	border: 1px solid #9fa3b1;
+}
+
+header #header-top .top ul span {
+    margin: 0 20px;
+}
+
+header #header-top .top ul a {
+    display: inline-block;
+    text-decoration: none;
+    color: #515359;
+}
+
+header #header-top .top ul a:hover {
+    transition: 500ms;
+    color: #515359b9;
+}
+
+header #header-top .top ul a #line {
+    width: 0;
+    height: 1px;
+    background-color: #d0d1c0;
+    transition: 500ms;
+}
+
+header #header-top .top ul a:hover #line {
+   transition: 500ms;
+    width: 100%;
+}
+
+header #header-top .top ul img {
+    border-radius: 20px;
+    text-decoration: none;
+    color: #515359;
+}
+
+header #header-top .top ul li:hover {
+    transition: 400ms;
+    color: #fff;
+    border: 1px solid #9fa3b1;
+    background-color: #575b69;
+}
+
+header #header-middle {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+header #header-middle .middle {
+    display: inline-block;
+    width: 990px;
+    text-align: center;
+}
+
+header #header-middle .middle .logo {
+    display: inline-block;
+    padding-top: 5px;
+    width: 30%;
+}
+
+header #header-middle .middle .search {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 30px;
+    width: 40%;
+}
+
+header #header-middle .middle .search input[type=search] {
+    border: none;
+    width: 200px;
+    height: 35px;
+    color: #cfcfcf;
+    border-bottom: 1px solid #575b69;
+    background: none;
+    outline: none;
+}
+
+header #header-middle .middle .search input[type=search]:focus {
+    transition: 400ms;
+    color: #515359;
+    border-bottom: 1px solid #515359;
+}
+
+header #header-middle .middle .search input[type=button] {
+    margin-left: 5px;
+    border: none;
+    font-size: 12px;
+    width: 60px;
+    height: 35px;
+    background: none;
+    border: 1px solid #575b69;
+    outline: none;
+}
+
+header #header-middle .middle .search input[type=button]:hover {
+    border: 1px solid #575b69;
+    background-color: #575b69;
+    color: #fff;
+    transition: 500ms;
+}
+
+header #header-middle .middle .info {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 35px;
+    width: 28%;
+}
+
+header #header-middle .middle .info #cartCount {
+    margin-left: 5px;
+    margin-top: 7px;
+    vertical-align: top;
+	background-color: #515359;
+    width: 30px;
+	border-radius: 6px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 2px;
+	padding-bottom: 3px;
+	font-size: 11px;
+    color: #fff;
+}
+
+
+
+header #header-bottom {
+    width: 100%;
+    text-align: center;
+}
+
+header #header-bottom .bottom {
+    display: inline-block;
+    width: 990px;
+    text-align: left;
+    padding-left: 7px;
+}
+
+header #header-bottom .bottom ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    height: 45px;
+}
+
+header #header-bottom .bottom ul li {
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+	padding-top: 8px;
+	padding-bottom: 10px;
+}
+
+header #header-bottom .bottom ul li:nth-child(1) {
+    background-color: #575b69;
+    color: #fff;
+}
+
+/* ---------------------------------------------------------  포인트 컬러 */
+
+}
+
+header .active {
+	border-bottom: 2px solid #515359444;
+}
+
+/* 전체메뉴보기 서브메뉴 */
+
+header #header-bottom .sub#menuAll {
+    z-index: 999;
+    border-top: 1px solid #e4e4e4;
+    width: 100%;
+    height: 0px;
+    transition: 600ms;
+    background-color: #fff;
+    text-align: center;
+    overflow: hidden;
+    font-size: 13px;
+    letter-spacing: -0.3px;
+}
+
+header #header-bottom .sub#menuAll .sub_content {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 990px;
+    text-align: left;
+    padding-left: 7px;
+}
+
+header #header-bottom .sub#menuAll .sub_content ul {
+	vertical-align: top;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+header #header-bottom .sub#menuAll .sub_content ul li.all_li {
+	vertical-align: top;
+	text-align: center;
+    display: inline-block;
+    width: 160px;
+    height: 270px;
+    padding-bottom: 6px;
+    border-left: 1px solid #eee;
+}
+
+header #header-bottom .sub#menuAll .sub_content ul li:nth-last-child(1) {
+	border-right: 1px solid #eee;
+}
+
+header #header-bottom .sub#menuAll .sub_content ul li.all_li ul {
+	vertical-align: top;
+	margin:0;
+	padding: 0;
+	padding-top: 15px;
+	list-style:none;
+}
+
+header #header-bottom .sub#menuAll .sub_content ul li.all_li ul li {
+	vertical-align: top;
+	padding-top: 6px;
+	height: 25px;
+	cursor: pointer;
+	border: none;
+}
+
+header #header-bottom .sub#menuAll .sub_content ul li.all_li ul li:hover {
+	background-color: #eee;
+	transition:500ms;
+	background-image: url("../images/top_sub_hover.png");
+	background-size: 100%;
+}
+
+
+/* 공지사항 서브메뉴 */
+
+header #header-bottom .sub#notice {
+    z-index: 999;
+    border-top: 1px solid #e4e4e4;
+    width: 100%;
+    height: 0px;
+    transition: 600ms;
+    background-color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+header #header-bottom .sub#notice .sub_content {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 990px;
+}
+
+header #header-bottom .sub#notice .sub_content a {
+	text-decoration: none;
+	color: #252525;
+}
+
+header #header-bottom .sub#notice .sub_content .sub_left {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    padding-left: 35px;
+    width: 295px;
+    height: 200px;
+    border-left: 1px solid #eee;
+}
+
+header #header-bottom .sub#notice .sub_content .sub_center {
+    display: inline-block;
+    vertical-align: top;
+    width: 330px;
+    height: 200px;
+    border-left: 1px solid #eee;
+    text-align: center;
+}
+
+header #header-bottom .sub#notice .sub_content .sub_center ul {
+    display: inline-block;
+    width: 80%;
+    text-align: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header #header-bottom .sub#notice .sub_content .sub_center ul li {
+    font-size: 13px;
+    letter-spacing: -0.4px;
+    padding-top: 6px;
+    padding-left: 10px;
+    height: 24px;
+    border-bottom: 1px solid #eee;
+}
+
+header #header-bottom .sub#notice .sub_content .sub_center ul li:hover {
+    transition: 500ms;
+    background-color: #eee;
+}
+
+header #header-bottom .sub#notice .sub_content .sub_right {
+    display: inline-block;
+    vertical-align: top;
+    width: 310px;
+    height: 200px;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    text-align: center;
+}
+
+header #header-bottom .sub#notice .sub_content .sub_right ul {
+    display: inline-block;
+    width: 80%;
+    text-align: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header #header-bottom .sub#notice .sub_content .sub_right ul li {
+    font-size: 13px;
+    letter-spacing: -0.4px;
+    padding-top: 6px;
+    padding-left: 10px;
+    height: 24px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+header #header-bottom .sub#notice .sub_content .sub_right ul li:hover {
+    transition: 500ms;
+    background-color: #eee;
+}
+
+header #header-bottom .sub#notice .sub_content .sub_center ul li a {
+    color: #515359;
+    text-decoration: none;
+}
+
+header #header-bottom .sub#notice .sub_content .sub_center ul li a:hover {
+    transition: 500ms;
+    color: #3b4f6a;
+}
+
+header #header-bottom .sub#notice .sub_content .sub_left ul li a {
+    color: #515359;
+    text-decoration: none;
+}
+
+header #header-bottom .sub#notice .sub_content .sub_left ul li a:hover {
+    transition: 500ms;
+    color: #3b4f6a;
+}
+
+header #header-bottom .sub#notice .sub_content .sub_left ul {
+    display: inline-block;
+    width: 80%;
+    text-align: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header #header-bottom .sub#notice .sub_content .sub_left ul li {
+    font-size: 13px;
+    letter-spacing: -0.4px;
+    padding-top: 6px;
+    padding-left: 10px;
+    height: 24px;
+    border-bottom: 1px solid #eee;
+}
+
+header #header-bottom .sub#notice .sub_content .sub_left ul li:hover {
+    transition: 500ms;
+    background-color: #eee;
+}
+
+
+/* 클래스샵 서브메뉴 */
+
+header #header-bottom .sub#classshop {
+    z-index: 999;
+    width: 100%;
+    height: 0px;
+    transition: 600ms;
+    background-color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+header #header-bottom .sub#classshop .sub_content {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 990px;
+}
+
+header #header-bottom .sub#classshop .sub_content .sub_left {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    padding-left: 35px;
+    width: 295px;
+    height: 350px;
+    border-left: 1px solid #eee;
+}
+
+header #header-bottom .sub#classshop .sub_content .sub_center {
+    display: inline-block;
+    vertical-align: top;
+    width: 330px;
+    height: 350px;
+    border-left: 1px solid #eee;
+    text-align: center;
+}
+
+header #header-bottom .sub#classshop .sub_content .sub_center ul {
+    display: inline-block;
+    width: 80%;
+    text-align: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header #header-bottom .sub#classshop .sub_content .sub_center ul li {
+    font-size: 13px;
+    letter-spacing: -0.4px;
+    padding-top: 6px;
+    padding-left: 10px;
+    height: 24px;
+    border-bottom: 1px solid #eee;
+}
+
+header #header-bottom .sub#classshop .sub_content .sub_center ul li a {
+    color: #515359;
+    text-decoration: none;
+}
+
+header #header-bottom .sub#classshop .sub_content .sub_center ul li a:hover {
+    transition: 500ms;
+    color: #3b4f6a;
+}
+
+header #header-bottom .sub#classshop .sub_content .sub_center ul li:hover {
+    transition: 500ms;
+    background-color: #f8f8f8;
+}
+
+header #header-bottom .sub#classshop .sub_content .sub_right {
+    display: inline-block;
+    vertical-align: top;
+    width: 310px;
+    height: 350px;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    text-align: center;
+}
+
+header #header-bottom .sub#classshop .sub_content .sub_right ul#bestClass {
+    display: inline-block;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header #header-bottom .sub#classshop .sub_content .sub_right ul#bestClass li {
+	margin:0;
+	padding:0;
+	display: inline-block;
+}
+
+header #header-bottom .sub#classshop .sub_content .sub_right ul#bestClass li img {
+	opacity: 0.4;
+}
+
+header #header-bottom .sub#classshop .sub_content .sub_right ul#bestClass li img:hover {
+	transition: 1000ms;
+	opacity: 1;
+}
+
+
+/* 원데이클래스 서브메뉴 */
+
+header #header-bottom .sub#oneday {
+    z-index: 999;
+    width: 100%;
+    height: 0px;
+    transition: 600ms;
+    background-color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+header #header-bottom .sub#oneday .sub_content {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 990px;
+}
+
+header #header-bottom .sub#oneday .sub_content .sub_left {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    padding-left: 35px;
+    width: 295px;
+    height: 350px;
+    border-left: 1px solid #eee;
+}
+
+header #header-bottom .sub#oneday .sub_content .sub_center {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 300px;
+    height: 350px;
+    border-left: 1px solid #eee;
+    text-align: left;
+    font-size: 13px;
+    letter-spacing: -0.3px;
+    line-height: 28px;
+}
+
+header #header-bottom .sub#oneday .sub_content .sub_right {
+    display: inline-block;
+    vertical-align: top;
+    width: 310px;
+    height: 350px;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    text-align: center;
+}
+
+header #header-bottom .sub#oneday .sub_content .sub_right ul {
+    display: inline-block;
+    width: 80%;
+    text-align: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header #header-bottom .sub#oneday .sub_content .sub_right ul li {
+	cursor: pointer;
+    font-size: 13px;
+    letter-spacing: -0.4px;
+    padding-top: 6px;
+    padding-left: 10px;
+    height: 24px;
+    border-bottom: 1px solid #eee;
+}
+
+header #header-bottom .sub#oneday .sub_content .sub_right ul li:hover {
+    transition: 500ms;
+    background-color: #eee;
+}
+
+
+/* 어워드 서브메뉴 */
+
+header #header-bottom .sub#award {
+    z-index: 999;
+    width: 100%;
+    height: 0px;
+    transition: 600ms;
+    background-color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+header #header-bottom .sub#award .sub_content {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 990px;
+}
+
+header #header-bottom .sub#award .sub_content .sub_left {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    padding-left: 35px;
+    padding-right: 35px;
+    width: 260px;
+    height: 350px;
+    border-left: 1px solid #eee;
+}
+
+header #header-bottom .sub#award .sub_content .sub_left p {
+    font-size: 13px;
+    letter-spacing: -0.3px;
+}
+
+header #header-bottom .sub#award .sub_content .sub_center {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 400px;
+    height: 350px;
+    border-left: 1px solid #eee;
+    text-align: center;
+}
+
+header #header-bottom .sub#award .sub_content .sub_center ul {
+    display: inline-block;
+    width: 80%;
+    text-align: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header #header-bottom .sub#award .sub_content .sub_center ul li {
+    font-size: 13px;
+    letter-spacing: -0.4px;
+    padding-top: 6px;
+    padding-left: 10px;
+    height: 24px;
+    border-bottom: 1px solid #eee;
+}
+
+header #header-bottom .sub#award .sub_content .sub_center ul li:hover {
+    transition: 500ms;
+    background-color: #eee;
+}
+
+header #header-bottom .sub#award .sub_content .sub_right {
+    display: inline-block;
+    vertical-align: top;
+    width: 210px;
+    height: 350px;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    text-align: center;
+}
+
+header #header-bottom .sub#award .sub_content .sub_right ul {
+    display: inline-block;
+    width: 80%;
+    text-align: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header #header-bottom .sub#award .sub_content .sub_right ul li {
+    font-size: 13px;
+    letter-spacing: -0.4px;
+    padding-top: 6px;
+    padding-left: 10px;
+    height: 24px;
+    border-bottom: 1px solid #eee;
+}
+
+header #header-bottom .sub#award .sub_content .sub_right ul li:hover {
+    transition: 500ms;
+    background-color: #eee;
+}
+
+/* 커뮤니티 서브메뉴 */
+
+header #header-bottom .sub#community {
+    z-index: 999;
+    width: 100%;
+    height: 0px;
+    transition: 600ms;
+    background-color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+header #header-bottom .sub#community .sub_content {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 990px;
+}
+
+header #header-bottom .sub#community .sub_content .sub_left {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    padding-left: 35px;
+    width: 295px;
+    height: 350px;
+    border-left: 1px solid #eee;
+}
+
+header #header-bottom .sub#community .sub_content .sub_center {
+    display: inline-block;
+    vertical-align: top;
+    width: 330px;
+    height: 350px;
+    border-left: 1px solid #eee;
+    text-align: center;
+}
+
+header #header-bottom .sub#community .sub_content .sub_center ul {
+    display: inline-block;
+    width: 80%;
+    text-align: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header #header-bottom .sub#community .sub_content .sub_center ul li {
+    font-size: 13px;
+    letter-spacing: -0.4px;
+    padding-top: 6px;
+    padding-left: 10px;
+    height: 24px;
+    border-bottom: 1px solid #eee;
+}
+
+header #header-bottom .sub#community .sub_content .sub_center ul li a {
+	color: #515359;
+	text-decoration: none;
+}
+
+header #header-bottom .sub#community .sub_content .sub_center ul li a:hover {
+	color: #3e4b6c;
+	text-decoration: underline;
+}
+
+
+header #header-bottom .sub#community .sub_content .sub_center ul li:hover {
+    transition: 500ms;
+    background-color: #eee;
+}
+
+header #header-bottom .sub#community .sub_content .sub_right {
+    display: inline-block;
+    vertical-align: top;
+    width: 310px;
+    height: 350px;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    text-align: center;
+}
+
+header #header-bottom .sub#community .sub_content .sub_right ul {
+    display: inline-block;
+    width: 80%;
+    text-align: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header #header-bottom .sub#community .sub_content .sub_right ul li {
+    font-size: 13px;
+    letter-spacing: -0.4px;
+    padding-top: 6px;
+    padding-left: 10px;
+    height: 24px;
+    border-bottom: 1px solid #eee;
+}
+
+header #header-bottom .sub#community .sub_content .sub_right ul li:hover {
+    transition: 500ms;
+    background-color: #eee;
+}
+
+header #header_line {
+    width:0;
+    height: 5px;
+    transition: 1000ms;
+    background-image: linear-gradient(to right, #6a7aa5 , #919ab3);
+}
+
+/* --------------------  Section  -------------------*/
+
+section {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+section#index {
+    width: 100%;
+    height: 750px;
+    color: #ffffff;
+    background-image: url('../images/bgbg.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center; 
+}
+
+section#index .intro_content {
+    padding-top: 260px;
+    text-align: center;
+}
+
+section#index .intro_content #intro-text {
+	display: inline; 
+	width: 400px; 
+	height: 30px;
+	line-height: 25px;
+	font-size: 16px;
+}
+
+/* ------------------------------ 클래스샵 ------------------------------- */
+
+section#shop {
+    width: 100%;
+    text-align: center;
+}
+
+section#shop .shop_content {
+    display: inline-block;
+    text-align: left;
+    width: 990px;
+    padding-top: 110px;
+}
+
+section#shop .shop_content #shop_left {
+    display: inline-block;
+    width: 0px;
+    height: 100vh;
+    position: fixed;
+    overflow-x: hidden;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.904);
+}
+
+section#shop .shop_content #shop_left #shop_sub {
+    display: inline-block;
+    width: 100%;
+}
+
+section#shop .shop_content #shop_left #shop_sub h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+
+section#shop .shop_content #shop_left #shop_sub ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+section#shop .shop_content #shop_left #shop_sub ul li {
+    cursor: pointer;
+    width: 100%;
+    padding-top: 6px;
+    padding-left: 15px;
+    height: 27px;
+    color: #3a3a3a;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+    border-bottom: 1px solid #eee;
+}
+
+section#shop .shop_content #shop_left #shop_sub ul li:hover {
+    transition: 500ms;
+    background-color: #eee;
+}
+
+section#shop .shop_content #slideButton {
+    cursor: pointer;
+    position: fixed;
+    /* margin-left: 215px; */
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
+    width: 30px;
+    padding-top: 5px;
+    height: 115px;
+    font-size: 13px;
+    border: 1px solid #e0e0e0;
+}
+
+section#shop .shop_content #slideButton:hover {
+    transition: 400ms;
+    background-color: #f0f0f0;
+    color:#515359;
+}
+
+
+section#shop .shop_content #shop_right {
+    display: inline-block;
+    margin-left: 50px;
+    width: 945px;
+    padding-top: 5px;
+    padding-bottom: 60px;
+    transition: 400ms;
+    font-size: 13px;
+    color: #3b3b3b;
+}
+
+section#shop .shop_content #shop_right h3 {
+    font-size: 15px;
+    margin: 0;
+    padding: 15px;
+    padding-left: 20px;
+}
+
+section#shop .shop_content #shop_right p {
+    font-size: 13px;
+    margin: 0;
+    padding-left: 20px;
+}
+
+section#shop .shop_content #shop_right .shop_banner {
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 920px;
+    height: 160px;
+    border: 1px solid #dddddd;
+    background-image: url('../images/class_top.jpg');
+}
+
+section#shop .shop_content #shop_right .shop_top {
+    height:50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+}
+
+section#shop .shop_content #shop_right .shop_top .sort {
+    vertical-align: top;
+    float: left;
+    text-align: center;
+    padding-left: 15px;
+}
+
+section#shop .shop_content #shop_right .shop_top .sort .sortBtn {
+    display: inline-block;
+    cursor: pointer;
+    width: 110px;
+    height: 28px;
+    padding-top: 9px;
+    background:none;
+    color: #424242;
+    border: 1px solid #e1e3e9;
+    outline: none;
+    font-size: 12px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+section#shop .shop_content #shop_right .shop_top .sort .selected {
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    background: #575b69;
+    outline: none;
+}
+
+section#shop .shop_content #shop_right .shop_top .sort .sortBtn:hover {
+    transition: 500ms;
+    background-color: #575b69;
+    color: #fff;
+}
+
+section#shop .shop_content #shop_right .shop_top .sort .selected:hover {
+    transition: 500ms;
+    background-color: #575b69;
+    color: #fff;
+}
+
+
+section#shop .shop_content #shop_right .shop_top .sort button img {
+    padding-right: 5px;
+    width: 12px;
+}
+
+section#shop .shop_content #shop_right .shop_top .searchForm {
+    float: right;
+    padding-top: 6px;
+    color: #515359;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+}
+
+section#shop .shop_content #shop_right .shop_top .searchForm input[type=search] {
+    border: 1px solid #dadada;
+    outline: none;
+    width: 200px;
+    height: 30px;
+    font-size: 12px;
+    letter-spacing: -0.3px;
+}
+
+section#shop .shop_content #shop_right .shop_top .searchForm input[type=search]:focus {
+    transition: 500ms;
+    border: 1px solid #3e4b6c;
+}
+
+section#shop .shop_content #shop_right .shop_top .searchForm button {
+    vertical-align: bottom;
+    padding-top: 5px;
+    height: 30px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+section#shop .shop_content #shop_right .shop_top .searchForm #ajaxSearch {
+	margin-top:2px;
+    font-size: 13px; 
+    letter-spacing:-0.5px; 
+    padding-left: 15px;
+    display: none; 
+    width: 227px;
+    position:absolute; 
+    z-index: 5; 
+    background-color: #fff; 
+    border: 1px solid #e2e2e2;
+}
+
+
+section#shop .shop_content #shop_right .shop_middle {
+    display: inline-block;
+    text-align: center;
+    transition: 400ms;
+}
+
+section#shop .shop_content #shop_right .shop_middle .item {
+    vertical-align: top;
+    display: inline-block;
+    margin: 5px;
+    width: 280px;
+    padding: 5px;
+    text-align: center;
+    transition: 400ms;
+    border: 2px solid #fff;
+}
+
+section#shop .shop_content #shop_right .shop_middle .item p {
+    font-size: 12px;
+    letter-spacing: -0.4px;
+    color: #424242;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding: 0;
+}
+
+section#shop .shop_content #shop_right .shop_middle .item:hover {
+	transition: 700ms;
+	border: 2px solid #c8cad1;
+}
+
+section#shop .shop_content #shop_right .shop_middle .item #img {
+	width: 280px;
+	overflow: hidden;
+}
+
+section#shop .shop_content #shop_right .shop_middle .item #img img:hover {
+	transition: 700ms;
+	transform: scale(1.2);
+}
+
+section#shop .shop_content #shop_right .shop_middle .item ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+section#shop .shop_content #shop_right .shop_middle .item ul li {
+    padding-top: 6px;
+    height: 21px;
+    text-align: center;
+}
+
+section#shop .shop_content #shop_right .shop_middle .item ul li.title a {
+    font-size: 16px;
+    font-weight: 600;
+    height: 30px;
+    color: #383838;
+    text-decoration: none;
+}
+
+section#shop .shop_content #shop_right .shop_middle .item ul li.title a:hover{
+    transition: 500ms;
+    text-decoration: underline;
+    color: #5d6c94;
+}
+
+section#shop .shop_content #shop_right .shop_middle .item #review_line {
+    background-color: #e1e3e9;
+    width: 100%;
+}
+
+section#shop .shop_content #shop_right .shop_middle .item button {
+    width: 180px;
+    height: 35px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    background: none;
+    outline: none;
+    border: 1px solid #9fa3b1;
+}
+
+section#shop .shop_content #shop_right .shop_middle .item button:hover {
+    transition: 400ms;
+    color: #fff;
+    background-color: #575b69;
+    border: 1px solid #575b69;
+}
+
+section#shop .shop_content #shop_right .shop_middle .shop_bottom {
+    display: inline-block;
+    width:100%;
+    text-align: center;
+    transition: 400ms;
+    font-size: 13px;
+}
+
+section#shop .shop_content #shop_right .shop_middle .shop_bottom a, section#shop .shop_content #shop_right .shop_middle .shop_bottom span {
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    text-decoration: none;
+    color: #515359;
+    border: 1px solid #eee;
+    font-size: 14px;
+}
+
+section#shop .shop_content #shop_right .shop_middle .shop_bottom button {
+	background: none;
+	outline: none;
+	border: 1px solid #d7d7d7;
+	color: #939393;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+section#shop .shop_content #shop_right .shop_middle .shop_bottom button:hover {
+	transition: 400ms;
+	background-color: #3b4f6a;
+	color: #fff;
+}
+
+
+/* 클래스샵 상세페이지 */
+
+section#shopView {
+    width: 100%;
+    text-align: center;
+}
+
+section#shopView .shopView_content {
+    display: inline-block;
+    text-align: center;
+    width: 990px;
+    padding-top: 140px;
+}
+
+section#shopView .shopView_content .view_right .view_menu {
+    width: 988px;
+    height: 40px;
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+    box-shadow: #fff 50px 30px 50px;
+}
+
+section#shopView .shopView_content .view_right .view_menu ul {
+    list-style-type: none;
+    width: 100%;
+    padding-left: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+section#shopView .shopView_content .view_right .view_menu ul li {
+	display: inline-block;
+    cursor: pointer;
+    padding-top: 10px;
+    width: 170px;
+    height: 30px;
+    color: #424242;
+    font-size: 13px;
+    letter-spacing: -0.4px;
+}
+
+section#shopView .shopView_content .view_right .view_menu ul li:hover {
+    transition: 500ms;
+    color: #575b69;
+}
+
+section#shopView .shopView_content .view_right {
+    display: block;
+    width: 990px;
+    overflow: hidden;
+}
+
+section#shopView .shopView_content .view_right .view_top_info {
+    text-align: left;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+    color: #666666;
+    padding-left: 10px;
+    height: 30px;
+}
+
+/* 클래스 상세페이지 -> 상품이미지 */
+section#shopView .shopView_content .view_right .view_top_left {
+    display: inline-block;
+    vertical-align: top;
+    width: 530px;
+    height: 300px;
+}
+
+section#shopView .shopView_content .view_right .view_top_right {
+    display: inline-block;
+    vertical-align: top;
+    width: 450px;
+    color: #515359;
+}
+
+section#shopView .shopView_content .view_right .view_top_right select {
+	width: 170px;
+	height: 28px;
+	border: 1px solid #e1e3e9;
+	padding-left: 10px;
+	outline: none;
+}
+
+section#shopView .shopView_content .view_right .view_top_right h2 {
+	margin: 0;
+	padding: 0;
+}
+
+section#shopView .shopView_content .view_right .view_top_right a {
+    font-size: 13px;
+    color: #515359;
+    text-decoration: none;
+}
+
+section#shopView .shopView_content .view_right .view_top_right a:hover {
+    transition: 400ms;
+    color: #3b4f6a;
+    background-color:#e7e7e7;
+    text-decoration: underline;
+}
+
+section#shopView .shopView_content .view_right .view_top_right table {
+    display: inline-block;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+section#shopView .shopView_content .view_right .view_top_right table td {
+    width: 200px;
+    height: 30px;
+}
+
+section#shopView .shopView_content .view_right .view_top_right table .tdclass {
+    width: 250px;
+    text-align: left;
+    font-size: 14px;
+}
+
+section#shopView .shopView_content .view_right .view_top_right button.api {
+	vertical-align: top;
+	padding-bottom: 10px;
+    width: 150px;
+    height: 40px;
+    background:none;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    margin: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+section#shopView .shopView_content .view_right .view_top_right button {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 150px;
+    height: 40px;
+    background:none;
+    outline: none;
+    font-size: 13px;
+    border: 2px solid #e1e3e9;
+    margin: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+section#shopView .shopView_content .view_right .view_top_right button.api:nth-child(1) {
+	background-image: url('../images/kakao-share-button.png');
+	background-size: 100%;
+	border:none;
+	border-bottom: 2px solid #fff;
+} 
+
+section#shopView .shopView_content .view_right .view_top_right button.api:nth-child(2) {
+	background-image: url('../images/naver-short-button.png');
+	background-size: 100%;
+	border:none;
+	border-bottom: 2px solid #fff;
+} 
+
+
+section#shopView .shopView_content .view_right .view_top_right button:hover {
+    transition: 400ms;
+    background-color: #515359;
+    color: #fff;
+}
+
+section#shopView .shopView_content .view_right .view_top_right button.addcart-btn {
+	width: 297px;
+	height: 46px;
+	font-size: 13px;
+	font-weight: bold;
+	letter-spacing: -0.4px;
+	border: 2px solid #e1e3e9;
+	color: #515359;
+}
+
+section#shopView .shopView_content .view_right .view_top_right button.addcart-btn:hover {
+	transition: 500ms;
+	border: 2px solid #575b69;
+	background-color: #575b69;
+	color: #fff;
+}
+
+section#shopView .shopView_content .view_right #about {
+    margin-top: 60px;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #d6d6d6;
+    padding-top: 230px;
+}
+
+section#shopView .shopView_content .view_right #review {
+    display: block;
+    width: 980px;
+    padding-top: 230px;
+    text-align: center;
+}
+
+section#shopView .shopView_content .view_right #review button {
+    width: 160px;
+    height: 45px;
+    color: #515359;
+    background-color: #fff;
+    border: 1px solid #999999;
+    outline: none;
+}
+
+section#shopView .shopView_content .view_right #review button:hover {
+    transition: 400ms;
+    background-color: #575b69;
+    color: #fff;
+}
+
+section#shopView .shopView_content .view_right #review .review-container {
+    display: inline-block;
+    width: 988px;
+    border: 1px solid #e7e7e7;
+    text-align: center;
+    color: #424242;
+}
+
+section#shopView .shopView_content .view_right #review .review-container textarea {
+	outline: none;
+}
+
+section#shopView .shopView_content .view_right #review .review-container button {
+    width: 150px;
+    height: 120px;
+}
+
+section#shopView .shopView_content .view_right #review table#review_tbl {
+    display: inline-block;
+    border-collapse: collapse;
+    color: #424242;
+}
+
+section#shopView .shopView_content .view_right #review table#review_tbl th {
+    background-color: #fff;
+    height: 35px;
+    letter-spacing: -0.5px;
+    border-bottom: 1px solid #c2c2c2;
+}
+
+section#shopView .shopView_content .view_right #review table#review_tbl td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+section#shopView .shopView_content .view_right #review table#review_tbl td a {
+    text-decoration: none;
+    color: #515359;
+}
+
+section#shopView .shopView_content .view_right #review table#review_tbl td a:hover {
+    text-decoration: underline;
+}
+
+
+
+section#shopView .shopView_content .view_right #review table#review_tbl button {
+    margin: 3px;
+    width: 30px;
+    height: 25px;
+    border: 1px solid #eee;
+    height: 30px;
+}
+
+section#shopView .shopView_content .view_right #review table#review_tbl button#curPage {
+    background-color: #575b69;
+    color: #fff;
+    height: 30px;
+}
+
+section#shopView .shopView_content .view_right #policy {
+    display: block;
+    padding-left: 15px;
+    text-align: left;
+    font-size: 14px;
+    letter-spacing: -0.7px;
+    line-height: 30px;
+    color: #414141;
+    width: 100%;
+    padding-top: 230px;
+    padding-bottom: 50px;
+}
+
+
+/* 상품등록 페이지 */
+
+section#shopWrite {
+    width: 100%;
+    text-align: center;
+}
+
+section#shopWrite .shopWrite_content {
+    display: inline-block;
+    text-align: center;
+    width: 990px;
+    padding-top: 210px;
+}
+
+section#shopWrite .shopWrite_content .shopWrite_left {
+    text-align: left;
+    position: fixed;
+    width: 200px;
+    height: 250px;
+}
+
+section#shopWrite .shopWrite_content .shopWrite_left h3 {
+    padding-left: 15px;
+}
+
+section#shopWrite .shopWrite_content .shopWrite_left ul {
+    list-style-type: none;
+    width: 100%;
+    padding-left: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+section#shopWrite .shopWrite_content .shopWrite_left ul li {
+    cursor: pointer;
+    padding-top: 7px;
+    padding-left: 15px;
+    height: 28px;
+    color: #424242;
+    font-size: 13px;
+    letter-spacing: -0.4px;
+}
+
+section#shopWrite .shopWrite_content .shopWrite_left ul li:hover {
+    transition: 500ms;
+    color: #a6aa7d;
+}
+
+
+section#shopWrite .shopWrite_content .shopWrite_right {
+    display: block;
+    text-align: left;
+    padding-left: 200px;
+    width: 785px;
+}
+
+section#shopWrite .shopWrite_content .shopWrite_right table {
+    font-size: 14px;
+    letter-spacing: -0.6px;
+    border-collapse: collapse;
+}
+
+section#shopWrite .shopWrite_content .shopWrite_right table th {
+    width: 150px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    height: 36px;
+    border-bottom: 1px solid #eee;
+}
+
+section#shopWrite .shopWrite_content .shopWrite_right table td {
+    width: 635px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+section#shopWrite .shopWrite_content .shopWrite_right input[type=text] {
+    vertical-align: top;
+    height: 28px;
+    padding-left: 15px;
+}
+
+section#shopWrite .shopWrite_content .shopWrite_right select {
+    vertical-align: top;
+    height: 33px;
+    padding-left: 7px;
+    padding-right: 7px;
+    outline: none;
+}
+
+section#shopWrite .shopWrite_content .shopWrite_right button {
+    font-size: 13px;
+    margin-left: 6px;
+    background: none;
+    outline: none;
+    border: 1px solid #9c9c9c;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+section#shopWrite .shopWrite_content .shopWrite_right button:hover {
+    transition: 400ms;
+    background-color: #515359;
+    color: #fff;
+}
+
+
+
+/* ------------------------ Footer ---------------------- */
+
+footer {
+    border-top: 1px solid #c9c9c9;
+    padding-top: 20px;
+    width: 100%;
+    color: #4e4e4e;
+    font-size: 12px;
+    letter-spacing: -0.3px;
+    text-align: center;
+}
+
+footer #footer_content {
+    display: inline-block;
+    width: 960px;
+    text-align: left;
+}
+
+footer #footer_content .footer_top {
+    display: inline-block;
+}
+
+footer #footer_content .footer_top .footer_top_left {
+    vertical-align: top;
+    display: inline-block;
+    text-align: left;
+    width: 290px;
+    line-height: 26px;
+}
+
+footer #footer_content .footer_top .footer_top_center {
+    vertical-align: top;
+    display: inline-block;
+    text-align: left;
+    width: 270px;
+}
+
+footer #footer_content .footer_top .footer_top_center ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 240px;
+}
+
+footer #footer_content .footer_top .footer_top_center ul li {
+    cursor: pointer;
+    padding-top: 5px;
+    padding-left: 15px;
+    height: 23px;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+footer #footer_content .footer_top .footer_top_center ul li:hover {
+    transition: 400ms;
+    background-color: #f5f5f5;
+}
+
+footer #footer_content .footer_top .footer_top_right {
+    vertical-align: top;
+    display: inline-block;
+    text-align: right;
+    width: 370px;
+}
+
+footer #footer_content .footer_top .footer_top_right input {
+    vertical-align: top;
+    padding-left: 15px;
+    width: 215px;
+    height: 30px;
+    background: none;
+    border: 1px solid #dadada;
+    outline: none;
+    margin-left: 5px;
+}
+
+footer #footer_content .footer_top .footer_top_right input[type=button] {
+    width: 110px;
+    height: 35px;
+}
+
+footer #footer_content .footer_bottom {
+    margin-top: 15px;
+    border-top: 1px solid #eee;
+    display: block;
+    text-align: left;
+    padding-top: 25px;
+    color: #515359;
+    height: 50px;
+    font-size: 12px;
+}
+
+/* --------------- 동현 -------------- */
+
+
+section#board {
+    width: 100%;
+    text-align: center;
+}
+
+section#board .board_content {
+    display: inline-block;
+    text-align: left;
+    width: 990px;
+    padding-top: 300px;
+}
+
+section#board .board_content #board_left {
+    display: inline-block;
+    width: 0;
+    height: 600px;
+    position: fixed;
+    overflow-x: hidden;
+    overflow: hidden;
+}
+
+section#board .board_content #board_left #board_sub {
+    display: inline-block;
+    width: 100%;
+}
+
+section#board .board_content #board_left #board_sub h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+
+section#board .board_content #board_left #board_sub ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+section#board .board_content #board_left #board_sub ul li {
+    cursor: pointer;
+    width: 100%;
+    padding-top: 6px;
+    padding-left: 15px;
+    height: 27px;
+    color: #3a3a3a;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+    border-bottom: 1px solid #eee;
+}
+
+section#board .board_content #board_left #board_sub ul li:hover {
+    transition: 500ms;
+    background-color: #eee;
+}
+
+section#board .board_content #slideButton {
+    cursor: pointer;
+    position: fixed;
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
+    width: 30px;
+    padding-top: 5px;
+    height: 115px;
+    font-size: 13px;
+    border: 1px solid rgb(199, 199, 199);
+}
+
+section#board .board_content #slideButton:hover {
+    transition: 400ms;
+    background-color: #b6b6a8;
+    color:#fff;
+}
+
+section#board .board_content #board_right {
+    display: inline-block;
+    margin-left: 50px;
+    width: 735px;
+    padding-bottom: 60px;
+    transition: 400ms;
+}
+
+section#board .board_content #board_right b {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0;
+    padding: 10px;
+}
+
+section#board .board_content #board_right .board_top {
+    height:40px;
+    border-bottom: 1px solid #eee;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+section#board .board_content #board_right .board_top .sort {
+    float: left;
+    padding-top: 5px;
+    padding-left: 15px;
+}
+
+
+section#board .board_content #board_right .board_top .sort input[type=radio]:checked + label {
+    color: #999b81;
+}
+
+section#board .board_content #board_right .board_top .sort label {
+    font-size: 13px;
+    letter-spacing: -0.5px;
+    color: #6e6e6e;
+}
+
+section#board .board_content #board_right .board_top .sort label:hover {
+    transition: 500ms;
+    color: #515359;
+}
+
+section#board .board_content #board_right .board_top .searchForm {
+    float: right;
+    color: #515359;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+}
+
+section#board .board_content #board_right .board_top .searchForm input[type=search] {
+    border: 1px solid #dadada;
+    outline: none;
+    height: 30px;
+}
+
+section#board .board_content #board_right .board_top .searchForm input[type=search]:focus {
+    transition: 500ms;
+    border: 1px solid #515359;
+}
+
+section#board .board_content #board_right .board_top .searchForm button {
+    vertical-align: bottom;
+    padding-top: 5px;
+    height: 30px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+section#board .board_content #board_right .board_middle a {
+	display: table;
+    border-radius: 8px;
+    margin: 5px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+section#board .board_content #board_right .board_middle a:first-child {margin-bottom: 14px;}
+section#board .board_content #board_right .board_middle a.list_table {
+    border: 1px solid red;
+    border-radius: 8px; 
+    display: inline-block;
+}
+
+section#board .board_content #board_right .board_middle a div.list {
+    display: table-column;
+    display: inline-block;
+    overflow: hidden;
+    padding-top: 7px;
+}
+section#board .board_content #board_right .board_middle div#tbl_list a:not(:first-child):hover {background-color: red;}
+
+section#board .board_content #board_right .board_middle a div.list:nth-child(1), div.list:nth-child(4), div.list:nth-child(6) {width: 80px;}
+section#board .board_content #board_right .board_middle a div.list:nth-child(2) {width: 260px;}
+section#board .board_content #board_right .board_middle a div.list:nth-child(3) {width: 110px;}
+section#board .board_content #board_right .board_middle a div.list:nth-child(5) {width: 65px;}
+
+section#board .board_content #board_right .board_middle img#img {
+    display: inline-block;
+    cursor: pointer;
+}
+
+section#board .board_content #board_right .board_bottom {margin-top:20px; text-align: center; width: 700px;}
+
+section#board .board_content #board_right .board_bottom a {
+	text-decoration: none;
+	color: black;
+	margin: 0 10px;
+}
+
+section#board .board_content #board_right .board_bottom span {margin: 0 10px;}
+
+section#board div#board_right .board_bottom input[type=button] {
+    border: none;
+    font-size: 12px;
+    width: 60px;
+    height: 25px;
+    background: none;
+    border: 1px solid #575b69;
+    float: right;
+}
+
+section#board div#board_right .board_bottom input[type=button]:hover {
+    border: 1px solid #515359;
+    background-color: #383838;
+    color: #fff;
+    transition: 500ms;
+}
+
+/* ----------------------------writeForm--------------------------------- */
+section#board div.board_content div#board_right div.board_middle form table#tbl_write tr:nth-child(1) td input {
+	width: 665px;
+	height: 24px;
+	font-size: 16px;
+}
+section#board div.board_content div#board_right div.board_middle form table#tbl_write tr:nth-child(2) td input {width: 80px;}
+section#board div.board_content div#board_right div.board_middle form table#tbl_write tr:last-of-type td input {float: right;}
+
+/* ------------------------------viewForm-------------------------------- */
+section#board div.board_content div#board_right div.board_middle div#view_head {
+	height: 70px;
+    padding: 0 30px;
+    line-height: 68px;
+    background: #000;
+    color: #fff;
+    font-size: 16px;
+}
+
+section#board div.board_content div#board_right div.board_middle div#info_head {
+    height: 70px;
+    padding-left: 30px;
+    line-height: 68px;
+    background: #f2f2f2;
+    color: #787878;
+}
+
+section#board div.board_content div#board_right div.board_middle div#info_head dl, dt, dd {
+	display: inline;
+	font-weight: bold;
+    font-size: 15px;
+}
+
+section#board div.board_content div#board_right div.board_middle div#info_head dd {margin: 0 20px 0 0;}
+section#board div.board_content div#board_right div.board_middle div#info_head dl div#left{float: left;}
+section#board div.board_content div#board_right div.board_middle div#info_head dl div#right{float: right;}
+
+section#board div.board_content div#board_right div.board_middle div#view_content {margin: 20px;}
+
+section#board div.board_content div#board_right div.board_middle div#like_btn {
+	display: block;
+	margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+	vertical-align : middle;
+	width: 90px;
+	height: 80px;
+	border: 1px solid #dfdfdf;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+section#board div.board_content div#board_right div.board_middle div#like_btn span:first-child{display: block; margin-left: 17px;}
+section#board div.board_content div#board_right div.board_middle div#like_btn span:last-child{margin-left: 12px;}
+
+section#board div.board_content div#board_right div.board_middle div#view_page a {border: 1px solid #dfdfdf; float: left;}
+section#board div.board_content div#board_right div.board_middle div#view_page a:nth-child(4), section#board div.board_content div#board_right div.board_middle div#view_page a:nth-child(5) {
+	float:right;
+	width: 140px;
+	height: 45px;
+	verticla-align: top;
+    line-height: 40px;
+}
+section#board div.board_content div#board_right div.board_middle div#view_page a:nth-child(4):hover, section#board div.board_content div#board_right div.board_middle div#view_page a:nth-child(5):hover {
+	border-color: rgb(148, 144, 144);
+}
+	
+section#board div.board_content div#board_right div.board_middle div#chat_head {
+	background-color: #c3c3c3;
+	padding: 16px;
+	vertical-align: top;
+	float:left;
+	width: 910px;
+}
+
+section#board div.board_content div#board_right div.board_middle div#chat_head a {
+	float: left;
+	width: 120px;
+	height: 75px;
+	padding-top: 40px;
+	background-color: #FFBB00;
+	color: white;
+	font-size: 20px;
+	margin: 0 0 0 14px;
+}
+section#board div.board_content div#board_right div.board_middle div#chat_head a:hover {background-color: #EDA900;}
+
+section#board div.board_content div#board_right div.board_middle table#tbl_write tr td input.inp {
+	float: left;
+	width: 120px;
+	height: 50px;
+	background-color: #FFBB00;
+	color: white;
+	font-size: 20px;
+	margin: 15px 0 0 14px;
+	border-radius: 7px;
+}

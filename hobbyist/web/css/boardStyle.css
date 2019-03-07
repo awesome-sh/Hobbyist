@@ -1,0 +1,926 @@
+/* ------------------------common---------------------------- */
+
+section#board {
+    width: 100%;
+    text-align: center;
+}
+
+section#board .board_content {
+    display: inline-block;
+    text-align: left;
+    width: 990px;
+    padding-top: 120px;
+}
+
+section#board .board_content #board_left {
+    display: inline-block;
+    width: 0;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.904);
+    overflow-x: hidden;
+    overflow: hidden;
+}
+
+section#board .board_content #board_left #board_sub {
+    display: inline-block;
+    width: 100%;
+}
+
+section#board .board_content #board_left #board_sub h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+
+section#board .board_content #board_left #board_sub ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+section#board .board_content #board_left #board_sub ul li {
+    cursor: pointer;
+    width: 100%;
+    padding-top: 6px;
+    padding-left: 15px;
+    height: 27px;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+    border-bottom: 1px solid #eee;
+}
+
+section#board .board_content #board_left #board_sub ul li:hover {
+    transition: 500ms;
+    background-color: #eee;
+}
+
+section#board .board_content #slideButton {
+    cursor: pointer;
+    position: fixed;
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
+    width: 30px;
+    padding-top: 5px;
+    height: 115px;
+    font-size: 13px;
+    border: 1px solid rgb(199, 199, 199);
+}
+
+section#board .board_content #slideButton:hover {
+    transition: 400ms;
+    background-color: #575b69;
+    color:#fff;
+}
+
+section#board .board_content #board_right {
+    display: inline-block;
+    margin-left: 50px;
+    width: 915px;
+    padding-left: 20px;
+    padding-bottom: 60px;
+    transition: 400ms;
+    font-size: 13px;
+    color: #3b3b3b;
+    padding-top: 20px;
+}
+
+section#board .board_content #board_right input {
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 20px;
+	border: 1px solid #ddd;
+	outline: none;
+}
+
+section#board .board_content #board_right .writeBtn {
+	width: 150px;
+	height: 45px;
+	background: #3e4b6c;
+	color: #fff;
+	padding: 0;
+}
+
+section#board .board_content #board_right .writeBtn:hover {
+	transition: 500ms;
+	width: 150px;
+	height: 45px;
+	background: #42454d;
+	color: #fff;
+	padding: 0;
+}
+
+/* ------------------Board List--------------------- */
+
+section#board .board_content #board_right .board_top {
+	height: 70px;
+}
+
+section#board .board_content #board_right .board_top .sort {
+    float: left;
+    padding-top: 2px;
+    padding-left: 15px;
+}
+
+section#board .board_content #board_right .board_top .sort div {
+	line-height: 30px;
+	text-align: center;
+	cursor: pointer;
+    border: none;
+    font-size: 12px;
+    width: 100px;
+    height: 33px;
+    padding-top: 2px;
+    margin-right: 2px;
+    background: none;
+    border: 1px solid #cacaca;
+    float: left;
+    transition: 500ms;
+}
+
+section#board .board_content #board_right .board_top .sort div:hover {
+	border: 1px solid #42454d;
+    background-color: #575b69;
+    color: #fff;
+    transition: 500ms;
+}
+
+
+
+section#board .board_content #board_right .board_top .searchForm {
+    color: #42454d;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+    float: right;
+}
+
+section#board .board_content #board_right .board_top .searchForm input[type=search] {
+    border: 1px solid #dadada;
+    outline: none;
+    height: 30px;
+}
+
+section#board .board_content #board_right .board_top .searchForm input[type=search]:focus {
+    transition: 500ms;
+    border: 1px solid #42454d;
+}
+
+section#board .board_content #board_right .board_top .searchForm button {
+    vertical-align: bottom;
+    padding-top: 5px;
+    height: 30px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+section#board .board_content #board_right .board_middle {
+	width: 910px;
+	text-align: center;
+	overflow: hidden;
+}
+
+section#board .board_content #board_right .board_middle  a {
+	font-size: 13px;
+}
+
+section#board .board_content #board_right .board_middle  a:hover {
+	text-decoration: underline;
+}
+
+section#board .board_content #board_right .board_middle table {
+	display: inline-block;
+	border-collapse: collapse;
+	font-size: 13px;
+	letter-spacing: -0.3px;
+}
+
+section#board .board_content #board_right .board_middle table th {
+	border-top: 2px solid #575b69;
+	background-color: #fff;
+	height: 45px;
+	border-bottom: 1px solid #575b69;
+}
+
+section#board .board_content #board_right .board_middle table td {
+	height: 35px;
+	border-bottom: 1px solid #eee;
+}
+
+section#board .board_content #board_right .board_middle table td.tableBottom {
+	padding-top: 10px;
+	vertical-align: top;
+	height: 40px;
+}
+
+section#board .board_content #board_right .board_middle table td.tableBottom button {
+	vertical-align: top;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #fff;
+	border: 1px solid #dfdfdf;
+	border-radius: 0;
+	color: #42454d;
+	margin-right: 2px;
+	height: 30px;
+	cursor: pointer;
+}
+
+section#board .board_content #board_right .board_middle table td.tableBottom button.current {
+	cursor: pointer;
+	background-color: #575b69;
+	color: #fff;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+section#board .board_content #board_right .board_middle table td.tableBottom input[type=button] {
+	vertical-align: top;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #fff;
+	border: 1px solid #dfdfdf;
+	border-radius: 0;
+	color: #42454d;
+	margin-right: 2px;
+	height: 33px;
+	width: 110px;
+	outline: none;
+}
+
+section#board .board_content #board_right .board_middle table td.tableBottom input[type=button]:hover {
+	transition: 400ms;
+	background-color: #575b69;
+	color: #fff;
+}
+
+section#board .board_content #board_right .board_middle table tr {
+	border: 2px solid #fff;
+}
+
+section#board .board_content #board_right .board_middle table tr:hover {
+	transition: 500ms;
+	background-color: #e1e3e9;
+}
+
+section#board .board_content #board_right .board_middle table tr:nth-child(1) {
+	background-color: #fff;
+	border-left: 3px solid #fff;
+}
+
+section#board .board_content #board_right .board_middle table tr:nth-last-child(1) {
+	background-color: #fff;
+	border-left: 3px solid #fff;
+}
+
+section#board .board_content #board_right .board_middle table span.comment {
+	margin: 0;
+	padding: 0;
+	color: #7286a5;
+	padding-left:15px;
+}
+
+section#board .board_content #board_right .board_middle table button {
+	background-color: #b0bbcc;
+	border-radius: 3px;
+	color: #fff;
+	border: none;
+	outline: none;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+section#board .board_content #board_right .board_middle table button:hover {
+	transition: 300ms;
+	background: #3e4b6c;
+}
+
+section#board .board_content #board_right .board_bottom {margin-top:20px; text-align: center; width: 700px;}
+
+section#board .board_content #board_right .board_bottom a {
+	text-decoration: none;
+	color: black;
+	margin: 0 10px;
+}
+
+section#board .board_content #board_right .board_bottom span {margin: 0 10px;}
+
+section#board div#board_right .board_bottom input[type=button] {
+    border: none;
+    font-size: 12px;
+    width: 60px;
+    height: 25px;
+    background: none;
+    border: 1px solid #cacaca;
+    float: right;
+}
+
+section#board div#board_right .board_bottom input[type=button]:hover {
+    border: 1px solid #42454d;
+    background-color: #383838;
+    color: #fff;
+    transition: 500ms;
+}
+
+
+
+/* ----------------------------writeForm--------------------------------- */
+section#board div.board_content div#board_right div.board_middle form table#tbl_write tr:nth-child(1) td input {
+	width: 665px;
+	height: 24px;
+	font-size: 16px;
+}
+section#board div.board_content div#board_right div.board_middle form table#tbl_write tr:nth-child(2) td input {width: 80px;}
+section#board div.board_content div#board_right div.board_middle form table#tbl_write tr:last-of-type td input {float: right;}
+
+
+section#board div.board_content div#board_right div.board_middle table#tbl_write tr td input.inp {
+	outline: none;
+	float: left;
+	width: 120px;
+	height: 50px;
+	background-color: #FFBB00;
+	color: white;
+	font-size: 20px;
+	margin: 15px 0 0 14px;
+	border-radius: 7px;
+	transition: 500ms;
+}
+
+section#board div.board_content div#board_right div.board_middle table#tbl_write tr td input.inp:hover {
+	background-color: #de950e;
+    color: #f0f0f0;
+    transition: 500ms;
+}
+
+
+/* ------------------------------viewForm-------------------------------- */
+section#boardView {
+    width: 100%;
+    text-align: center;
+}
+
+section#boardView .boardView_content {
+    display: inline-block;
+    text-align: left;
+    width: 990px;
+    padding-top: 150px;
+}
+
+section#boardView .boardView_content #boardView_left {
+    display: inline-block;
+    width: 0;
+    height: 600px;
+    position: fixed;
+    background-color: #fff;
+    overflow-x: hidden;
+    overflow: hidden;
+}
+
+section#boardView .boardView_content #boardView_left #boardView_sub {
+    display: inline-block;
+    width: 100%;
+}
+
+section#boardView .boardView_content #boardView_left #boardView_sub h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+
+section#boardView .boardView_content #boardView_left #boardView_sub ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+section#boardView .boardView_content #boardView_left #boardView_sub ul li {
+    cursor: pointer;
+    width: 100%;
+    padding-top: 6px;
+    padding-left: 15px;
+    height: 27px;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+    border-bottom: 1px solid #eee;
+}
+
+section#boardView .boardView_content #boardView_left #boardView_sub ul li:hover {
+    transition: 500ms;
+    background-color: #eee;
+}
+
+section#boardView .boardView_content #slideButton {
+    cursor: pointer;
+    position: fixed;
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
+    width: 30px;
+    padding-top: 5px;
+    height: 115px;
+    font-size: 13px;
+    border: 1px solid rgb(199, 199, 199);
+}
+
+section#boardView .boardView_content #slideButton:hover {
+    transition: 400ms;
+    background-color: #575b69;
+    color:#fff;
+}
+
+section#boardView .boardView_content #boardView_right  {
+    display: inline-block;
+    margin-left: 30px;
+    width: 910px;
+    padding-bottom: 60px;
+    transition: 400ms;
+    text-align: center;
+    padding-left: 25px;
+}
+
+section#boardView .boardView_content #boardView_right .right_top {
+	text-align: left;
+}
+
+section#boardView .boardView_content #boardView_right .boardView_top {
+	padding-top: 25px;
+	padding-left: 30px;
+	display: inline-block;
+	width: 100%;
+	font-size: 22px;
+	margin-bottom: 25px;
+	text-align: left;
+}
+
+section#boardView .boardView_content #boardView_right .boardView_middle {
+	display: inline-block;
+	width: 910px;
+	height: 36px;
+	border-top: 1px solid #e0e0e0;
+	padding-top: 13px;
+	font-size: 14px;
+	letter-spacing: -0.3px;
+	background-color: #e8ebf2;
+}
+
+section#boardView .boardView_content #boardView_right .boardView_middle #info_head {
+    color: #5b5b5b;
+}
+
+section#boardView .boardView_content #boardView_right .boardView_middle #info_head #left {
+	float: left;
+	padding-left: 20px;
+}
+
+section#boardView .boardView_content #boardView_right .boardView_middle #info_head #right {
+	float: right;
+	padding-right:20px;
+}
+
+/* 내용부분 */
+
+section#boardView .boardView_content #boardView_right .boardView_middle #view_content {
+	display: inline-block;
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+/* 좋아요 */
+section#boardView .boardView_content #boardView_right .boardView_middle #view_bottom {
+	vertical-align: middle;
+	display: inline-block;
+	width: 200px;
+	height: 50px;
+	padding-top: 15px;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+section#boardView .boardView_content #boardView_right .boardView_middle #view_bottom #like_btn {
+	vertical-align: middle;
+	display: inline-block;
+	width: 80px;
+	padding-top: 15px;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+section#boardView .boardView_content #boardView_right .boardView_middle #view_bottom #report {
+	vertical-align: middle;
+	display: inline-block;
+	width: 80px;
+	padding-top: 15px;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+section#boardView .boardView_content #boardView_right .boardView_middle #view_bottom #report a {
+	color: #42454d;
+	text-decoration: none;
+}
+
+section#boardView .boardView_content #boardView_right .boardView_middle #view_page {
+	width: 100%;
+}
+
+section#boardView .boardView_content #boardView_right .boardView_middle #view_page #left {
+	float: left;
+}
+
+section#boardView .boardView_content #boardView_right .boardView_middle #view_page #left img {
+	border: 1px solid #c2c2c2;
+}
+
+section#boardView .boardView_content #boardView_right .boardView_middle #view_page #right {
+	float: right;
+}
+
+section#boardView .boardView_content #boardView_right .boardView_middle #view_page #right button {
+	width: 100px;
+	height: 40px;
+	background-color: #fff;
+	color: #42454d;
+	border: 1px solid #e2e2e2;
+	outline: none;
+}
+	
+section#boardView .boardView_content #boardView_right .boardView_middle #view_page #right button:hover {
+	transition: 400ms;
+	background-color: #3e4b6c;
+	color: #fff;
+}
+
+
+section#boardView .boardView_content #boardView_right .boardView_middle #chat_head {
+	display: inline-block;
+	width: 100%;
+}
+
+section#boardView .boardView_content #boardView_right .boardView_middle #chat_head input[type=submit] {
+	width: 170px;
+	height: 125px;
+	border: 1px solid #e2e2e2;
+	background: #3e4b6c;
+	color: #fff;
+	vertical-align: top;
+}
+
+section#boardView .boardView_content #boardView_right .boardView_middle #chat_head input[type=submit]:hover {
+	background-color: #343434;
+    color: #f0f0f0;
+    transition: 500ms;
+}
+
+section#boardView .boardView_content #boardView_right .boardView_middle #chat_head textarea {
+	width: 720px;
+	height: 120px;
+	outline: none;
+}
+
+/* 댓글목록 */
+
+section#boardView .boardView_content #boardView_right .boardView_middle #commentTable {
+	display: inline-block;
+	width: 880px;
+}
+
+section#boardView .boardView_content #boardView_right .boardView_middle #commentTable table {
+	border-collapse: collapse;
+}
+
+section#boardView .boardView_content #boardView_right .boardView_middle #commentTable table td {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+section#boardView .boardView_content #boardView_right .boardView_middle #commentTable table td:nth-child(1) {
+	background-color: #f4f5f9;
+}
+
+section#boardView .boardView_content #boardView_right .boardView_middle #commentTable table td:nth-child(2) {
+
+}
+
+section#boardView .boardView_content #boardView_right .boardView_middle #commentTable table button {
+	background: none;
+	border: 1px solid #e2e2e2;
+	width: 60px;
+	height: 30px;
+}
+
+section#boardView .boardView_content #boardView_right .boardView_middle #commentTable table #insert2 {
+	vertical-align: top;
+	width: 120px;
+	height: 88px;
+	background: #bdc9dd;
+}
+
+
+/* --------------------------------boardFAQList---------------------------------- */
+
+section#board .board_content #board_right .FAQsearchForm {
+    color: #252525;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+    border: 1px solid #c3c3c3;
+    width: 640px;
+    height: 60px;
+    padding-top: 30px;
+    padding-left: 250px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+section#board .board_content #board_right .FAQsearchForm #searchType {
+    width: 100px;
+    font-size: 13px;
+    outline: none;
+    padding: 5px;
+    float: left;
+    margin-right: 5px;
+}
+
+section#board .board_content #board_right .FAQsearchForm input[type=search] {
+    border: 1px solid #dadada;
+    float: left;
+    outline: none;
+    height: 30px;
+}
+
+section#board .board_content #board_right .FAQsearchForm img {
+    float: left;
+    margin-right: 10px;
+}
+
+section#board .board_content #board_right .FAQsearchForm input[type=search]:focus {
+    transition: 500ms;
+    border: 1px solid #252525;
+}
+
+section#board .board_content #board_right .FAQsearchForm button {
+    vertical-align: bottom;
+    padding-top: 5px;
+    height: 30px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+section#board .board_content #board_right .board_middle div#tbl_list ul {
+    list-style-type: none;
+}
+
+section#board .board_content #board_right .board_middle div#tbl_list ul li {
+    border-bottom: 1px solid #c3c3c3;
+    width: 800px;
+}
+
+section#board .board_content #board_right .board_middle div#tbl_list ul li.title {
+    border-bottom: none;
+}
+
+section#board .board_content #board_right .board_middle div#tbl_list ul li.title, section#board .board_content #board_right .board_middle div#tbl_list ul li.content {
+    background-color: rgba(255, 144, 144, 0.1);
+    
+}
+
+section#board .board_content #board_right .board_middle div#tbl_list ul li.title div {
+    border-bottom: 2px dotted #c3c3c3;
+    padding: 10px 20px 10px 0px;
+}
+
+section#board .board_content #board_right .board_middle div#tbl_list ul img {
+	margin-left: 20px;
+	margin-top: 3px;
+	float: left;
+}
+
+section#board .board_content #board_right .board_middle div#tbl_list ul li.content div {
+    padding: 10px 180px 10px 0px;
+}
+
+section#board .board_content #board_right .board_middle div#tbl_list ul li div{
+    display: inline-block;
+}
+
+section#board .board_content #board_right .board_middle div#tbl_list ul div#categoryTop, section#board .board_content #board_right .board_middle div#tbl_list ul div#titleTop {
+    font-size: 18px;
+    width: 60px;
+    text-align: center;
+    border-top: 2px solid black;
+    background-color: rgba(162, 162, 162, 0.2);
+}
+
+
+section#board .board_content #board_right .board_middle div#tbl_list ul li div#titleTop {
+    width: 800px;
+}
+
+
+section#board .board_content #board_right .board_middle div#tbl_list ul li.second {
+    cursor: pointer;
+    padding: 8px 10px;
+    width: 800px;
+}
+section#board .board_content #board_right .board_middle div#tbl_list li.second div.titleMiddle {
+    padding-left: 30px;
+    width: 570px;
+}
+
+section#board .board_content #board_right .board_middle div#tbl_list ul li.title div, section#board .board_content #board_right .board_middle div#tbl_list ul li.content div {
+    width: 600px;
+    margin-left: 20px;
+}
+
+section#board .board_content #board_right .board_middle div#tbl_list ul li.title, section#board .board_content #board_right .board_middle div#tbl_list ul li.content {
+    display: none;
+}
+
+section#board .board_content #board_right .board_middle div#tbl_list ul li.content div {
+    width: 400px;
+}
+
+section#board .board_content #board_right div.board_FAQ_bottom {margin-top:20px; width: 740px; text-align: center;}
+
+section#board .board_content #board_right div.board_FAQ_bottom a {
+	text-decoration: none;
+	color: black;
+	margin: 0 10px;
+}
+
+section#board .board_content #board_right div.board_FAQ_bottom span {margin: 0 10px;}
+
+section#board div#board_right div.board_FAQ_bottom input[type=button] {
+    border: none;
+    font-size: 12px;
+    width: 60px;
+    height: 25px;
+    background: none;
+    border: 1px solid #cacaca;
+    float: right;
+}
+
+section#board div#board_right div.board_FAQ_bottom input[type=button]:hover {
+    border: 1px solid #252525;
+    background-color: #383838;
+    color: #fff;
+    transition: 500ms;
+}
+
+/* ------------------------------boardDirectQuestionList-------------------------------- */
+section#board div.board_content div#board_right div.board_DQ_top form table#tbl_write tr:nth-child(1) td input {
+	width: 665px;
+	height: 24px;
+	font-size: 16px;
+}
+section#board div.board_content div#board_right div.board_DQ_top form table#tbl_write tr:nth-child(2) td input {width: 80px;}
+section#board div.board_content div#board_right div.board_DQ_top form table#tbl_write tr:last-of-type td input {float: right;}
+
+
+section#board div.board_content div#board_right div.board_DQ_top table#tbl_write tr td input.inp {
+	outline: none;
+	float: left;
+	width: 120px;
+	height: 50px;
+	background-color: #FFBB00;
+	color: white;
+	font-size: 20px;
+	margin: 15px 0 0 14px;
+	border-radius: 7px;
+	transition: 500ms;
+}
+
+section#board div.board_content div#board_right div.board_DQ_top table#tbl_write tr td input.inp:hover {
+	background-color: #de950e;
+    color: #f0f0f0;
+    transition: 500ms;
+}
+
+
+section#board .board_content #board_right .board_DQ_middle {
+	display: inline-block;
+	margin-left: 25px;}
+section#board .board_content #board_right .board_DQ_bottom{margin-left: 25px;}
+
+section#board .board_content #board_right .board_DQ_middle a {
+	display: table;
+    border-radius: 8px;
+    margin: 5px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+section#board .board_content #board_right .board_DQ_middle a:first-child {margin-bottom: 14px;}
+section#board .board_content #board_right .board_DQ_middle a.list_table {
+    border: 1px solid #c091c6;
+    border-radius: 8px; 
+    display: inline-block;
+}
+
+section#board .board_content #board_right .board_DQ_middle a div.list {
+    display: table-column;
+    display: inline-block;
+    overflow: hidden;
+    padding-top: 7px;
+}
+section#board .board_content #board_right .board_DQ_middle div#tbl_list a:not(:first-child):hover {background-color: #f8f4fb;}
+
+section#board .board_content #board_right .board_DQ_middle a div.list:nth-child(1), div.list:nth-child(4), div.list:nth-child(6) {width: 80px;}
+section#board .board_content #board_right .board_DQ_middle a div.list:nth-child(2) {width: 260px;}
+section#board .board_content #board_right .board_DQ_middle a div.list:nth-child(3) {width: 110px;}
+section#board .board_content #board_right .board_DQ_middle a div.list:nth-child(5) {width: 65px;}
+
+section#board .board_content #board_right .board_DQ_middle img#img {
+    display: inline-block;
+    cursor: pointer;
+}
+
+section#board .board_content #board_right .board_DQ_bottom {margin-top:20px; text-align: center; width: 700px;}
+
+section#board .board_content #board_right .board_DQ_bottom a {
+	text-decoration: none;
+	color: black;
+	margin: 0 10px;
+}
+
+section#board .board_content #board_right .board_DQ_bottom span {margin: 0 10px;}
+
+
+/* ------------------------------boardDirectQuestionView-------------------------------- */
+section#board div.board_content div#board_right div.board_middle div.view_DQ_page button {
+    border: 1px solid #dfdfdf;
+	float:right;
+	width: 110px;
+	height: 45px;
+    line-height: 35px;
+}
+
+section#board div.board_content div#board_right div.board_middle .view_DQ_page button {
+	vertical-align: top;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #fff;
+	border: 1px solid #dfdfdf;
+	border-radius: 0;
+	color: #252525;
+	margin-right: 2px;
+	height: 33px;
+	outline: none;
+}
+
+section#board div.board_content div#board_right div.board_middle .view_DQ_page button:hover {
+	transition: 400ms;
+	background-color: #475770;
+	color: #fff;
+}
+
+section#board div.board_content div#board_right .view_DQ_page input[type=submit] {
+	vertical-align: top;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+    padding-bottom: 5px;
+    float: right;
+	background-color: #fff;
+	border: 1px solid #dfdfdf;
+	border-radius: 0;
+	color: #252525;
+    margin-right: 2px;
+	height: 45px;
+	width: 110px;
+	outline: none;
+}
+
+section#board div.board_content div#board_right .view_DQ_page input[type=submit]:hover {
+	transition: 400ms;
+	background-color: #475770;
+	color: #fff;
+}
+
+section#board div.board_content div#board_right div.board_middle div#view_answer_content {
+    background-color: rgba(255, 144, 144, 0.1);
+    margin: 50px;
+    padding: 25px;
+    padding-top: 8px;
+}
+
+
+
+
+
+

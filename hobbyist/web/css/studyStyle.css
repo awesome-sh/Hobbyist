@@ -1,0 +1,75 @@
+section#study {
+    width: 100%;
+    text-align: center;
+    background-color: #eaecf0;
+}
+
+section#study .study_content {
+    display: inline-block;
+    text-align: center;
+    width: 990px;
+    padding-top: 213px;
+}
+section#study .study_content .study_top {
+    width: 970px;
+    height: 50px;
+    position: fixed;
+    color: rgb(39, 39, 39);
+    padding-left: 20px;
+    text-align: left;
+    border: 1px solid #c7cacf;
+    background-color: #fff;
+    font-size: 14px;
+    transition: 500ms;
+    overflow: hidden;
+}
+
+section#study .study_content .study_top ul {
+    margin: 0;
+    padding: 0;
+    padding-top: 13px;
+    list-style-type: none;
+}
+
+section#study .study_content .study_top ul li {
+	vertical-align: top;
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-left: 1px solid #e7e7e7;
+    cursor: pointer;
+    height: 30px;
+}
+
+section#study .study_content .study_top ul li:nth-child(1) {
+    border: none;
+} 
+
+section#study .study_content .study_top ul li:hover {
+    transition: 400ms;
+}
+
+section#study .study_content .study_center {
+	margin-top: 50px;
+	margin-bottom: 60px;
+    padding-top: 10px;
+    width: 990px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+section#study .study_content .study_center table {
+	display: inline-block;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+section#study .study_content .study_center table td:nth-child(1) {
+	border-right: 1px solid #dde1e6;
+}
+
+section#study .study_content .study_center table h3 {
+	margin: 0;
+	padding: 0;
+}

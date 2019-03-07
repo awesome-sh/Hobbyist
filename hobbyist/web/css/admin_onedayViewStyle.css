@@ -1,0 +1,69 @@
+section#admin .admin_content .adminOnedayView_right {
+    padding-top: 40px;
+    float: right;
+    width: 820px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+section#admin .admin_content .adminOnedayView_right #adminOnedayView_main {
+	display: inline-block;
+    width: 810px;
+    background-color: #fff;
+}
+
+section#admin .admin_content .adminOnedayView_right #adminOnedayView_main button {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	height: 32px;
+	background-color: #575b69;
+	color: #fff;
+	outline:none;
+	border: none;
+}
+
+section#admin .admin_content .adminOnedayView_right #adminOnedayView_main table {
+    border-collapse: collapse;
+    border: none;
+}
+
+section#admin .admin_content .adminOnedayView_right #adminOnedayView_main table th {
+	font-weight: normal;
+	color: #252525;
+	font-size: 14px;
+    height: 50px;
+    border-right: 1px solid #eee;
+}
+
+section#admin .admin_content .adminOnedayView_right #adminOnedayView_main table a {
+	color: #252525;
+	text-decoration: none;	
+}
+
+section#admin .admin_content .adminOnedayView_right #adminOnedayView_main table tr {
+	height: 40px;
+	border-bottom: 1px solid #eee;
+}
+
+section#admin .admin_content .adminOnedayView_right #adminOnedayView_main table tr:hover {
+	transition: 500ms;
+	background-color:  #e6e9ec;
+	border-left: 3px solid #575b69;
+}
+
+section#admin .admin_content .adminOnedayView_right #adminOnedayView_main table tr:hover a {
+	text-decoration: underline;	
+}
+
+
+
+section#admin .admin_content .adminOnedayView_right #adminOnedayView_main table input {
+	margin-left: 10px;
+	border-radius: 4px;
+	height: 32px;
+	border: 1px solid #e1e1e1;
+	outline: none;
+	padding-left: 15px;
+}

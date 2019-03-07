@@ -1,0 +1,566 @@
+
+#mypage_writerEnroll {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}  
+
+#mypage_writerEnroll .tableBox{
+    width: 95%;
+    margin: 0 10px;
+}
+
+#mypage_writerEnroll .tal_Title{
+    display: table;
+    width: 100%;
+    padding: 10px 0;
+    background-color: white;
+	color: #32343a;
+	border-top: 2px solid #575b69;
+    border-bottom: 1px solid #575b69;
+}
+
+#mypage_writerEnroll .tal_Content {
+    display: table;
+    width: 100%;
+    padding: 10px 0;
+    background-color: white;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+#mypage_writerEnroll .tal_Content:hover {
+    display: table;
+    width: 100%;
+    padding: 10px 0;
+	background-color: rgba(59, 79, 106, 0.1);
+    border-bottom: 1px solid black;
+	cursor: pointer;
+	transition: 400ms;
+}
+
+#mypage_writerEnroll .tal_text {
+    display: table-cell;
+    width: 100%;
+    padding: 5px;
+}
+
+
+#mypage_writerEnroll .talT_WeNo {
+    display: table-cell;
+    width: 50px;
+    padding: 5px;
+}
+
+#mypage_writerEnroll .talC_WeNo {
+    display: table-cell;
+    width: 50px;
+    padding: 5px;
+}
+
+#mypage_writerEnroll .talT_WeQuarter {
+    display: table-cell;
+    width: 70px;
+    padding: 5px;
+}
+
+#mypage_writerEnroll .talC_WeQuarter {
+    display: table-cell;
+    width: 70px;
+    padding: 5px;
+}
+
+#mypage_writerEnroll .talT_NickName {
+    display: table-cell;
+	width: 100px;
+	padding: 5px;
+}
+
+#mypage_writerEnroll .talC_NickName {
+    display: table-cell;
+	width: 100px;
+    padding: 5px;
+}
+
+#mypage_writerEnroll .talT_Email {
+	display: table-cell;
+	width: 100px;
+    padding: 5px;
+}
+
+#mypage_writerEnroll .talC_Email {
+	display: table-cell;
+	width: 100px;
+    padding: 5px;
+}
+
+#mypage_writerEnroll .talT_Name {
+    display: table-cell;
+    width: 100px;
+    padding: 5px;
+}
+
+#mypage_writerEnroll .talC_Name {
+    display: table-cell;
+    width: 100px;
+    padding: 5px;
+}
+
+#mypage_writerEnroll .talT_Birthday {
+    display: table-cell;
+    width: 210px;
+    padding: 5px;
+}
+
+#mypage_writerEnroll .talC_Birthday {
+    display: table-cell;
+    width: 100px;
+    padding: 5px;
+}
+
+#mypage_writerEnroll .talT_WeDate {
+    display: table-cell;
+    width: 100px;
+    padding: 5px;
+}
+
+#mypage_writerEnroll .talC_WeDate {
+    display: table-cell;
+    width: 100px;
+    padding: 5px;
+}
+
+#mypage_writerEnroll .talT_WePassYN {
+    display: table-cell;
+    width: 60px;
+    padding: 5px;
+}
+
+#mypage_writerEnroll .talC_WePassYN {
+    display: table-cell;
+    width: 60px;
+    padding: 5px;
+}
+
+
+#mypage_writerEnroll .talT_noticeStatus {
+    display: table-cell;
+    width: 100px;
+    padding: 5px;
+}
+
+#mypage_writerEnroll .talC_noticeStatus {
+    display: table-cell;
+    width: 100px;
+    padding: 5px;
+}
+
+
+
+#mypage_writerEnroll .talC_WePassYN_textN {
+	padding: 0;
+	margin: 0;
+	color: red;
+}
+
+#mypage_writerEnroll .talC_WePassYN_textY {
+	padding: 0;
+	margin: 0;
+	color: green;
+}
+
+#mypage_writerEnroll .talC_WePassYN_text1 {
+	display: inline-block;
+	width: 50px;
+	padding: 0;
+	margin: 0;
+	color: black;
+	border-radius: 5px;
+}
+
+#mypage_writerEnroll .talC_WePassYN_text2 {
+	display: inline-block;
+	width: 50px;
+	padding: 0;
+	margin: 0;
+	color: black;
+	border-radius: 5px;
+}
+
+#mypage_writerEnroll .talC_WePassYN_text3 {
+	display: inline-block;
+	width: 50px;
+	padding: 0;
+	margin: 0;
+	color: black;
+	border-radius: 5px;
+}
+
+#mypage_writerEnroll .tal_bottom {
+    display: inline-block;
+	width:100%;
+	margin-top: 10px;
+    text-align: center;
+    transition: 400ms;
+    font-size: 13px;
+}
+
+#mypage_writerEnroll .tal_bottom a, #mypage_writerEnroll .tal_bottom span {
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+	padding-right: 10px;
+	margin: 0 1px;
+    text-decoration: none;
+	color: black;
+	background-color: white;
+    border: 1px solid rgba(59, 79, 106, 1);
+    font-size: 14px;
+}
+
+
+#mypage_writerEnroll .tal_bottom a:hover, #mypage_writerEnroll .tal_bottom span:hover {
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+	padding-right: 10px;
+    text-decoration: none;
+	color: black;
+	background-color: rgba(59, 79, 106, 0.1);
+    border: 1px solid rgba(59, 79, 106, 1);
+	font-size: 14px;
+	transition: 400ms;
+}
+
+
+/* 작가신청 미리보기 css */
+
+#mypage_writerEnroll .pagePreviewModal {
+	position: fixed;
+	z-index: 9200;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+#mypage_writerEnroll .pagePreviewModalBox {
+	position: relative;
+	width: 810px;
+	height: 620px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: white;
+}
+
+#mypage_writerEnroll .wEPreviewBody {
+	position: absolute;
+	top:0;
+	width: 100%;
+	height: 90%;
+	overflow-y: scroll;
+	border: 1px solid #c2c2c2;
+}
+
+#mypage_writerEnroll .wEPreviewFooter {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	background-color: #c8cad1;
+}
+
+#mypage_writerEnroll .wEPreviewFooter>div {
+	width: 30%;
+	height: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+#mypage_writerEnroll .wEnrollPreAreaI {
+	width: 100%;
+	margin: 10px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#mypage_writerEnroll .wEnrollPreMemberImageBox img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+}
+
+#mypage_writerEnroll .wEnrollPreAreaT {
+	width: 100%;
+	margin: 10px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#mypage_writerEnroll .wEnrollPreTitle {
+    width: 95%;
+    height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	font-size:24px;
+	color:rgba(59, 79, 106, 0.6);
+}
+
+#mypage_writerEnroll .wEnrollPreBox {
+	width: 95%;
+	padding: 5px;
+	text-align: left;
+	border: 1px solid rgba(59, 79, 106, 0.6);
+}
+
+#mypage_writerEnroll .wEnrollPreAttr {
+	padding: 0px 10px;
+	display: flex;
+	font-size:16px;
+	color:rgba(59, 79, 106, 1);
+}
+
+#mypage_writerEnroll .wEnrollPreVal {
+	min-height: 30px;
+	margin-bottom: 15px;
+	padding: 10px 20px;
+	display: flex;
+	font-size:18px;
+	color:black;
+}
+
+#mypage_writerEnroll .wEnrollPreValueBox {
+	margin: 10px;
+	border-left: 2px solid #575b69;
+}
+
+#mypage_writerEnroll .button1 {
+	margin: 5px;
+	width: 100px;
+	height: 30px;
+	font-size: 16px;
+	letter-spacing: 0.15em;
+	border: 1px solid #9fa3b1;
+	color: #32343a;
+	background-color: white;
+	outline: none;
+	opacity: 1;
+	transition: 500ms;
+	cursor: pointer;
+}
+
+#mypage_writerEnroll .button1:hover {
+    color: #fff;
+	background-color: #252525;
+	outline: none;
+	transition: 500ms;
+}
+
+#mypage_writerEnroll .buttonY {
+	margin: 5px;
+	width: 100px;
+	height: 30px;
+	font-size: 16px;
+	letter-spacing: 0.15em;
+	border: 1px solid #c2c2c2;
+	color: #252525;
+	background-color: white;
+	outline: none;
+	opacity: 1;
+	transition: 500ms;
+	cursor: pointer;
+}
+
+#mypage_writerEnroll .buttonY:hover {
+    color: #fff;
+	background-color: #428146;
+	outline: none;
+	transition: 500ms;
+}
+
+#mypage_writerEnroll .buttonN {
+	margin: 5px;
+	width: 100px;
+	height: 30px;
+	font-size: 16px;
+	letter-spacing: 0.15em;
+	border: 1px solid #c2c2c2;
+	color: #252525;
+	background-color: white;
+	outline: none;
+	opacity: 1;
+	transition: 500ms;
+	cursor: pointer;
+}
+
+#mypage_writerEnroll .buttonN:hover {
+    color: #fff;
+	background-color: #864343;
+	outline: none;
+	transition: 500ms;
+}
+
+
+
+
+
+
+
+
+#mypage_writerEnroll .tableBox_top>form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+}
+
+#mypage_writerEnroll .tal_top {
+	width: 100%;
+	margin-bottom: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+#mypage_writerEnroll .tableBox_top .sort .sortBtn {
+    display: inline-block;
+    cursor: pointer;
+    width: 100px;
+    height: 26px;
+    padding-top: 7px;
+    background:none;
+	color: #424242;
+	background-color: white;
+    border: 1px solid #9fa3b1;
+    outline: none;
+}
+
+#mypage_writerEnroll .tableBox_top .sort .selected {
+    display: inline-block;
+    cursor: pointer;
+    width: 100px;
+    height: 26px;
+    padding-top: 7px;
+    background-color: #fff;
+    color: #424242;
+    border-bottom: 2px solid #575b69;
+    outline: none;
+}
+
+#mypage_writerEnroll .tableBox_top .sort .sortBtn:hover {
+	transition: 500ms;
+	color: white;
+    background-color: #575b69;
+}
+
+#mypage_writerEnroll .tableBox_top .sort .selected:hover {
+	transition: 500ms;
+	color: white;
+    background-color: #575b69;
+}
+
+
+#mypage_writerEnroll .tableBox_top .sort button img {
+    padding-right: 5px;
+    width: 12px;
+}
+
+#mypage_writerEnroll .tableBox_top .searchForm {
+    color: #252525;
+    letter-spacing: -0.5px;
+}
+
+#mypage_writerEnroll .tableBox_top .searchForm input[type=search] {
+    border: 1px solid #dadada;
+    outline: none;
+    height: 30px;
+}
+
+#mypage_writerEnroll .tableBox_top .searchForm input[type=search]:focus {
+    transition: 500ms;
+    border: 1px solid #252525;
+}
+
+#mypage_writerEnroll .tableBox_top .searchForm button {
+    vertical-align: bottom;
+    padding-top: 5px;
+    height: 30px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+#mypage_writerEnroll .tableBox_top .searchForm #ajaxSearch {
+    letter-spacing:-0.5px; 
+    padding-left: 15px;
+    display: none; 
+    width: 204px;
+    position:absolute; 
+    z-index: 5; 
+    background-color: #fff; 
+    border: 1px solid #888888;
+}
+
+
+/* 복구버튼 */
+#mypage_writerEnroll .noticeListRe {
+    display: inline-block;
+    width: 45px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #c8cad1;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+	color: #32343a;
+	border: none;
+	outline: none;
+    cursor: pointer;
+}
+#mypage_writerEnroll .noticeListRe:hover {
+    transition: 400ms;
+    color: white;
+	background-color: #575b69;
+}
+
+/* 삭제버튼 */
+#mypage_writerEnroll .noticeListDel {
+    display: inline-block;
+    width: 45px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: 700;
+	background-color: #e1e3e9;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+	color: #32343a;
+	border: none;
+	outline: none;
+}
+#mypage_writerEnroll .noticeListDel:hover {
+    transition: 400ms;
+    color: white;
+	background-color: #575b69;
+}
+

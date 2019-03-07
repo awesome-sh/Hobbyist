@@ -1,0 +1,120 @@
+section#admin {
+    width: 100%;
+    text-align: center;
+}
+
+section#admin .admin_content {
+    display: inline-block;
+    text-align: center;
+    width: 990px;
+    padding-top: 143px;
+}
+section#admin .admin_content .admin_top {
+    width: 970px;
+    height: 50px;
+    position: fixed;
+    color: rgb(39, 39, 39);
+    padding-left: 20px;
+    text-align: left;
+    border: 1px solid #c7cacf;
+    background-color: #fff;
+    font-size: 13px;
+    transition: 500ms;
+    overflow: hidden;
+    top: 153px;
+    z-index: 1;
+}
+
+section#admin .admin_content .admin_top ul {
+    margin: 0;
+    padding: 0;
+    padding-top: 13px;
+    list-style-type: none;
+}
+
+section#admin .admin_content .admin_top ul li {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-left: 1px solid #e7e7e7;
+    height: 100%;
+    cursor: pointer;
+}
+
+section#admin .admin_content .admin_top ul li:nth-child(1) {
+    border: none;
+} 
+
+section#admin .admin_content .admin_top ul li:hover {
+    transition: 400ms;
+}
+
+section#admin .admin_content .admin_left {
+    padding-top: 60px;
+    float: left;
+    width: 160px;
+    min-height: 62vh;
+}
+
+section#admin .admin_content .admin_left ul {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+section#admin .admin_content .admin_left ul li {
+	cursor: pointer;
+    padding-top: 6px;
+    background-color: #575b69;
+    color: #fff;
+    height: 30px;
+    font-size: 13px;
+}
+
+section#admin .admin_content .admin_left ul.sub {
+    display: none;
+}
+
+section#admin .admin_content .admin_left ul.sub li {
+    background-color: #6f7486;
+}
+
+section#admin .admin_content .admin_left ul.sub li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section#admin .admin_content .admin_left ul li:hover {
+    transition: 500ms;
+    background-color: #424551;
+}
+
+
+section#admin .admin_content .admin_right {
+    padding-top: 47px;
+    float: right;
+    width: 830px;
+    padding-bottom: 50px;
+}
+
+section#admin .admin_content .admin_right #admin_main {
+	display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+section#admin .admin_content .admin_right #admin_main .image {
+    cursor: pointer;
+	margin: 15px;
+	display: inline-block;
+}
+
+section#admin .admin_content .admin_right #admin_main table {
+    border-collapse: collapse;
+}
+
+section#admin .admin_content .admin_right #admin_main table th {
+    border-top: 2px solid #777777;
+    height: 45px;
+}

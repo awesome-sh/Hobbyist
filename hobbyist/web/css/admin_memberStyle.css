@@ -1,0 +1,75 @@
+section#admin .admin_content .adminMember_right {
+    padding-top: 60px;
+    float: right;
+    width: 820px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+section#admin .admin_content .adminMember_right #adminMember_main {
+	display: inline-block;
+    width: 810px;
+}
+
+section#admin .admin_content .adminMember_right #adminMember_main table {
+    border-collapse: collapse;
+}
+
+section#admin .admin_content .adminMember_right #adminMember_main table th {
+	font-size: 14px;
+	font-weight: normal;
+	color: #252525;
+    height: 40px;
+    border-top: 2px solid #252525;
+}
+
+section#admin .admin_content .adminMember_right #adminMember_main table a {
+	color: #252525;
+	text-decoration: none;	
+}
+
+section#admin .admin_content .adminMember_right #adminMember_main table tr {
+	height: 40px;
+	border-bottom: 1px solid #eee;
+}
+
+section#admin .admin_content .adminMember_right #adminMember_main table tr:hover {
+	transition: 500ms;
+	background-color:  #edeff1;
+}
+
+section#admin .admin_content .adminMember_right #adminMember_main table tr:hover a {
+	text-decoration: underline;
+}
+
+section#admin .admin_content .adminMember_right #adminMember_main table tr:nth-last-child(1) {
+	height: 60px;
+}
+
+section#admin .admin_content .adminMember_right #adminMember_main table span {
+	padding-left: 7px;
+	padding-right: 7px;
+	border: 1px solid #d4d4d4;
+	color: #252525;
+}
+
+section#admin .admin_content .adminMember_right #adminMember_main table tr:nth-last-child(1)  a {
+	padding-left: 7px;
+	padding-right: 7px;
+	border: 1px solid #d4d4d4;
+	color: #252525;
+}
+
+section#admin .admin_content .adminMember_right #adminMember_main table input {
+	cursor: pointer;
+	background-color: #d9dfea;
+	border: none;
+	border-radius: 3px;
+	outline: none;
+}
+
+section#admin .admin_content .adminMember_right #adminMember_main table input:hover {
+	background-color: #252525;
+	transition: 500ms;
+	color:#fff;
+}
