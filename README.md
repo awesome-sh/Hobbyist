@@ -6,7 +6,7 @@ Java Web Project (Java, Jsp/Servlet)
 <img src="https://user-images.githubusercontent.com/46561976/53697109-2ce3bf00-3e11-11e9-8a8c-e87d6f5d4d87.jpg">
 
 <hr/>
-# 상세 구현기능
+# 상세 구현기능<br><Br>
 1. 온라인 샵
 - 상품 등록, 수정, 삭제<br>
 - 게시물 정렬<br>
